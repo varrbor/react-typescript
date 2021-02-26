@@ -11,6 +11,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1ohBQ6UxTpGTSanzUPewJbQsQU2" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="autoscrollToSource" value="true" />
@@ -22,7 +23,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/store/actions" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -38,10 +39,10 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\bvarv\react-for -study\react-typoscript\src" />
       <recent name="C:\Users\bvarv\react-for -study\react-typoscript\src\store\actions" />
-      <recent name="C:\Users\bvarv\react-for -study\react-typoscript\src\store\reducers" />
       <recent name="C:\Users\bvarv\react-for -study\react-typoscript" />
+      <recent name="C:\Users\bvarv\react-for -study\react-typoscript\src" />
+      <recent name="C:\Users\bvarv\react-for -study\react-typoscript\src\store\reducers" />
       <recent name="C:\Users\bvarv\react-for -study\react-typoscript\src\components" />
     </key>
   </component>
@@ -59,6 +60,7 @@
       <workItem from="1614270613480" duration="543000" />
       <workItem from="1614271464222" duration="2815000" />
       <workItem from="1614331369706" duration="5527000" />
+      <workItem from="1614338863814" duration="1111000" />
     </task>
     <task id="LOCAL-00001" summary="add todos">
       <created>1614152491879</created>

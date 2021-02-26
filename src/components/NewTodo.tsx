@@ -3,7 +3,7 @@
 import React, { useRef } from 'react';
 import './NewTodo.css';
 import { useSelector, shallowEqual } from 'react-redux';
-import { getInput } from '../store/reducers/todos';
+import { getTodos } from '../store/reducers/todos';
 
 interface NewTodoProps {
   onAddTodo: (todoText: string) => void;
@@ -11,9 +11,6 @@ interface NewTodoProps {
 
 const NewTodo: React.FC<NewTodoProps> = props => {
   const textInputRef = useRef<HTMLInputElement>(null);
-
-  const { isKeyboardVisible } = useSelector(getInput, shallowEqual);
-console.log(111111, isKeyboardVisible);
 
   const todoSubmitHandler = (event: React.FormEvent) => {
     event.preventDefault();
