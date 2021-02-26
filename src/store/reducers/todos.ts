@@ -1,6 +1,6 @@
 import createReducer from '../../utils/redux-create-reducer';
 import {
-
+  ADD_NEW_TODO
 } from '../actions/todos';
 
 export interface ITodos {
@@ -9,13 +9,15 @@ export interface ITodos {
 }
 
 interface IState {
-  input: ITodos;
+  todos: ITodos[];
 }
 
-export const initialState: ITodos = { id: Math.random().toString(), text: 'Start·the·course.' };
+export const initialState: ITodos[] = [{ id: Math.random().toString(), text: 'Start·the·course.' }, { id: Math.random().toString(), text: 'Start·the·course.' }];
 
-export const getTodos = (state: IState): ITodos => initialState;
+export const getTodos = (state: IState): ITodos[] => initialState;
 
 export default createReducer(initialState, {
-
+  [ADD_NEW_TODO]: (todo: ITodos) => {
+    return ({ todo });
+  }
 });

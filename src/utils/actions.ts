@@ -11,10 +11,13 @@ interface ITypesObject {
   [key: string]: string;
 }
 
-export const createAction = <P>(type: string) => (payload: P) => ({
-  type,
-  payload,
-});
+export const createAction = <P>(type: string) => (payload: P) => {
+  console.log(7777,payload)
+  return {
+    type,
+      payload,
+  };
+}
 export const createEmptyAction = (type: string) => () => ({
   type,
   payload: {},

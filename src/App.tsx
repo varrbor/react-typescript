@@ -4,30 +4,32 @@ import NewTodo from './components/NewTodo';
 import { Todo } from './todo.model';
 import {shallowEqual, useSelector, useDispatch} from "react-redux";
 import {getTodos} from "./store/reducers/todos";
-import { read } from './store/actions/todos';
+import { addTodo, ADD_NEW_TODO } from './store/actions/todos';
 
 const App: React.FC = () => {
-  const [todos, setTodos] = useState<Todo[]>([
-    { id: Math.random().toString(), text: 'Start·the·course.' },
-  ]);
+  // const [todos, setTodos] = useState<Todo[]>([
+  //   { id: Math.random().toString(), text: 'Start·the·course.' },
+  // ]);
 
-  const  todos1  = useSelector(getTodos, shallowEqual);
+  const   todos   = useSelector(getTodos, shallowEqual);
 
   const dispatch = useDispatch();
-  // console.log(111111, text);
+  console.log(111111, todos);
 
   const todoAddHandler = (text: string) => {
-    setTodos([
-      ...todos,
+    console.log('todoAddHandler', text);
+    dispatch(addTodo(
       {
         id: Math.random().toString(),
         text,
-      },
-    ]);
+      }
+    ));
+
   };
   const todoDeleteHandler = (todoId: string) => {
     // setTodos(todos.filter(todo => todo.id !== todoId));
-    dispatch(read(todos.filter(todo => todo.id !== todoId)));
+    console.log(777)
+
   };
 
   return (
