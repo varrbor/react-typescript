@@ -1,0 +1,49 @@
+{
+    "defaultSeverity": "error",
+    "extends": [
+        "tslint-react"
+    ],
+    "jsRules": {
+    },
+    "rules": {
+        "indent": [2, 4, {"SwitchCase": 1}],
+        "react/jsx-indent": [2, 4],
+        "react/jsx-indent-props": [2, 4],
+        "import/no-named-as-default": "off", // https://github.com/benmosher/eslint-plugin-import/issues/544
+        "import/no-extraneous-dependencies": "off",
+        "function-paren-newline": "off",
+        "arrow-parens": "off",
+        "react/forbid-prop-types": "off",
+
+        // should probably turn these on and fix em
+        "prefer-destructuring": "warn",
+        "react/default-props-match-prop-types": "warn",
+        "react/no-string-refs": "warn",
+        "react/require-default-props": "warn",
+        "react/no-unused-prop-types": "warn",
+        "react/jsx-curly-brace-presence": "warn",
+        "class-methods-use-this": "warn",
+        "react/no-unused-state": "warn",
+        "jsx-a11y/click-events-have-key-events": "warn",
+        "jsx-a11y/no-static-element-interactions": "warn",
+        "no-bitwise": "warn",
+        "padded-blocks": "warn",
+        "no-plusplus": "warn",
+        "react/jsx-closing-tag-location": "warn",
+        "comma-dangle": "warn",
+        "no-useless-return": "warn",
+        "jsx-a11y/label-has-for": "off",
+        "react/no-typos": "warn",
+        "object-curly-newline": "warn",
+        "jsx-a11y/anchor-is-valid": "warn",
+        "react/destructuring-assignment": ["enabled", "never"]
+    },
+    "rulesDirectory": [
+    ],
+    "linterOptions": {
+        "exclude": [
+            "config/**/*.js",
+            "node_modules/**/*.ts"
+        ]
+    }
+}
