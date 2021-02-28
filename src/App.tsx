@@ -15,6 +15,7 @@ const App: React.FC = () => {
 
   const dispatch = useDispatch();
   console.log(111111, todos);
+  console.log(22222, typeof todos);
 
   const todoAddHandler = (text: string) => {
     console.log('todoAddHandler', text);

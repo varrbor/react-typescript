@@ -12,7 +12,6 @@ interface ITypesObject {
 }
 
 export const createAction = <P>(type: string) => (payload: P) => {
-  console.log(7777,payload)
   return {
     type,
       payload,

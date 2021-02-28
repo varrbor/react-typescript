@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="05fe86ce-f9c9-4b7b-bb45-1fab696ed9cb" name="Default Changelist" comment="fixed">
+    <list default="true" id="f86f2487-5c53-4e9c-8fb6-dc8965cdc3f2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/react-typoscript.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NewTodo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NewTodo.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/actions/todos.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/todos.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/createStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/createStore.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/modules/combineReducers.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/modules/todo_list/actions.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/modules/todo_list/reducer.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/modules/todo_list/types.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/reducers/todos.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/todos.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/actions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/redux-create-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/redux-create-reducer.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,134 +25,37 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1ohBQ6UxTpGTSanzUPewJbQsQU2" />
+  <component name="ProjectId" id="1p2MlqPVBk9kCBINi89ENUyl63L" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
-    <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/store/actions" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.standard" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.path.for.package.standard" value="project" />
-    <property name="node.js.path.for.package.tslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.standard" value="" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="ts.external.directory.path" value="C:\Users\bvarv\react-for -study\react-typoscript\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="C:\Users\varrb\react-typescript\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\bvarv\react-for -study\react-typoscript\src\store\actions" />
-      <recent name="C:\Users\bvarv\react-for -study\react-typoscript" />
-      <recent name="C:\Users\bvarv\react-for -study\react-typoscript\src" />
-      <recent name="C:\Users\bvarv\react-for -study\react-typoscript\src\store\reducers" />
-      <recent name="C:\Users\bvarv\react-for -study\react-typoscript\src\components" />
-    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="05fe86ce-f9c9-4b7b-bb45-1fab696ed9cb" name="Default Changelist" comment="" />
-      <created>1613728923437</created>
+      <changelist id="f86f2487-5c53-4e9c-8fb6-dc8965cdc3f2" name="Default Changelist" comment="" />
+      <created>1614376886544</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1613728923437</updated>
-      <workItem from="1613728924657" duration="13191000" />
-      <workItem from="1614246010831" duration="5895000" />
-      <workItem from="1614268631402" duration="1294000" />
-      <workItem from="1614270613480" duration="543000" />
-      <workItem from="1614271464222" duration="2815000" />
-      <workItem from="1614331369706" duration="5527000" />
-      <workItem from="1614338863814" duration="1111000" />
-      <workItem from="1614340139711" duration="6033000" />
-      <workItem from="1614362350957" duration="927000" />
-      <workItem from="1614363336820" duration="131000" />
+      <updated>1614376886544</updated>
+      <workItem from="1614376890221" duration="1085000" />
+      <workItem from="1614540132047" duration="4751000" />
     </task>
-    <task id="LOCAL-00001" summary="add todos">
-      <created>1614152491879</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1614152491879</updated>
-    </task>
-    <task id="LOCAL-00002" summary="add new todo">
-      <created>1614167085246</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1614167085246</updated>
-    </task>
-    <task id="LOCAL-00003" summary="finished todo">
-      <created>1614170315379</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1614170315379</updated>
-    </task>
-    <task id="LOCAL-00004" summary="finished todo">
-      <created>1614238263594</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1614238263594</updated>
-    </task>
-    <task id="LOCAL-00005" summary="added slint">
-      <created>1614272954092</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1614272954092</updated>
-    </task>
-    <task id="LOCAL-00006" summary="added slint">
-      <created>1614333924784</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1614333924784</updated>
-    </task>
-    <task id="LOCAL-00007" summary="fixed">
-      <created>1614337795296</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1614337795296</updated>
-    </task>
-    <task id="LOCAL-00008" summary="fixed">
-      <created>1614338345972</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1614338345972</updated>
-    </task>
-    <task id="LOCAL-00009" summary="fixed">
-      <created>1614340159376</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1614340159376</updated>
-    </task>
-    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-    <option name="exactExcludedFiles">
-      <list>
-        <option value="$PROJECT_DIR$/src/index.js" />
-      </list>
-    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -157,13 +68,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="add todos" />
-    <MESSAGE value="add new todo" />
-    <MESSAGE value="finished todo" />
-    <MESSAGE value="added slint" />
-    <MESSAGE value="fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed" />
   </component>
 </project>

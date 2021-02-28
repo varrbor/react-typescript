@@ -12,12 +12,13 @@ interface IState {
   todos: ITodos[];
 }
 
-export const initialState: ITodos[] = [{ id: Math.random().toString(), text: 'Start·the·course.' }, { id: Math.random().toString(), text: 'Start·the·course.' }];
+export const initialState: ITodos[] = [{ id: Math.random().toString(), text: 'Start·the·course.' }];
 
-export const getTodos = (state: IState): ITodos[] => initialState;
+export const getTodos = (state: IState): ITodos[] => [...state.todos];
 
 export default createReducer(initialState, {
   [ADD_NEW_TODO]: (todo: ITodos) => {
-    return ({ todo });
+    console.log(89898889, todo)
+    return   { ...todo } ;
   }
 });

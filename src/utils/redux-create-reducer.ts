@@ -34,6 +34,7 @@ const createReducer = (initialState: IState = {}, handlers: IHandlers) => {
     if (handlers['*']) {
       return { ...newState, ...handlers['*'](action.payload, newState, action.type) };
     }
+    console.log('newState', newState)
     return newState;
   };
 };
