@@ -2,8 +2,6 @@
 /* eslint-disable react/prop-types */
 import React, { useRef } from 'react';
 import './NewTodo.css';
-import { useSelector, shallowEqual } from 'react-redux';
-import { getTodos } from '../store/reducers/todos';
 
 interface NewTodoProps {
   onAddTodo: (todoText: string) => void;
