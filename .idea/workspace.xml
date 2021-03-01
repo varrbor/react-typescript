@@ -1,21 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f86f2487-5c53-4e9c-8fb6-dc8965cdc3f2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/react-typoscript.iml" beforeDir="false" />
+    <list default="true" id="3256cbc1-80e7-478b-9406-91c9672a9a5c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/createStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/createStore.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/modules/combineReducers.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/modules/todo_list/actions.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/modules/todo_list/reducer.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/modules/todo_list/types.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducers/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducers/todos.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/todos.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/actions.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/redux-create-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/redux-create-reducer.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,48 +13,35 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1p2MlqPVBk9kCBINi89ENUyl63L" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="1p9aknBjda7LEsnfjUhK9Qhw1oi" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="ts.external.directory.path" value="C:\Users\varrb\react-typescript\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="C:\Users\bvarv\react-for -study\react-typescript\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f86f2487-5c53-4e9c-8fb6-dc8965cdc3f2" name="Default Changelist" comment="" />
-      <created>1614376886544</created>
+      <changelist id="3256cbc1-80e7-478b-9406-91c9672a9a5c" name="Default Changelist" comment="" />
+      <created>1614597905301</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1614376886544</updated>
-      <workItem from="1614376890221" duration="1085000" />
-      <workItem from="1614540132047" duration="4751000" />
+      <updated>1614597905301</updated>
+      <workItem from="1614597907025" duration="600000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

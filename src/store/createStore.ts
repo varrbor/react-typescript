@@ -1,4 +1,7 @@
-import { createStore } from 'redux';
+import { createStore, applyMiddleware, compose } from 'redux';
 import reducer from './reducers/index';
 
-export default createStore(reducer);
+// @ts-ignore
+const composer = (window['__REDUX_DEVTOOLS_EXTENSION_COMPOSE__'] as typeof compose) || compose;
+
+export default createStore(reducer, undefined, composer(applyMiddleware()));
