@@ -10,4 +10,3 @@ export const types = {
 
 export const addTodo = createAction(ADD_NEW_TODO);
 export const deleteTodo = createAction(DELETE_TODO);
-

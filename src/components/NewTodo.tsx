@@ -11,7 +11,6 @@ const NewTodo: React.FC<NewTodoProps> = props => {
   const textInputRef = useRef<HTMLInputElement>(null);
 
   const todoSubmitHandler = (event: React.FormEvent) => {
-    console.log('submit')
     event.preventDefault();
     const enteredText = textInputRef.current?.value as string;
     props.onAddTodo(enteredText);
