@@ -1,6 +1,6 @@
-import createReducer from '../../utils/redux-create-reducer';
 import {
-  ADD_NEW_TODO
+  ADD_NEW_TODO,
+  DELETE_TODO
 } from '../actions/todos';
 
 export interface ITodos {
@@ -27,7 +27,10 @@ const todos = (state = initialState, action: IAction) => {
       return [
         ...state,
          action.payload,
-
+      ];
+      case DELETE_TODO:
+      return [
+        ...action.payload,
       ];
     default:
       return state;
@@ -35,9 +38,3 @@ const todos = (state = initialState, action: IAction) => {
 };
 export default todos;
 
-// export default createReducer(initialState, {
-//   [ADD_NEW_TODO]: (todo: ITodos) => {
-//     console.log(89898889, todo)
-//     return [ todo, ...state.todos ];
-//   }
-// });
