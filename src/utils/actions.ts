@@ -14,9 +14,9 @@ interface ITypesObject {
 export const createAction = <P>(type: string) => (payload: P) => {
   return {
     type,
-      payload,
+    payload,
   };
-}
+};
 export const createEmptyAction = (type: string) => () => ({
   type,
   payload: {},
@@ -24,10 +24,17 @@ export const createEmptyAction = (type: string) => () => ({
 
 export const fakeAction = (payload?: any) => ({ type: 'fake', payload });
 
-export const actionSeq = (actionsModule: IActionModule, types: ITypesObject, seq: any[]) => () =>
-  seq.forEach(f => f(actionsModule, types));
+export const actionSeq = (
+  actionsModule: IActionModule,
+  types: ITypesObject,
+  seq: any[]
+) => () => seq.forEach(f => f(actionsModule, types));
 
-export const act = (type: string, func: ActionCreator, withData?: boolean) => () =>
+export const act = (
+  type: string,
+  func: ActionCreator,
+  withData?: boolean
+) => () =>
   test(`Action ${type} works fine`, () => {
     const data = { [type]: `action type` };
     const action = func(withData ? data : undefined);
@@ -35,12 +42,17 @@ export const act = (type: string, func: ActionCreator, withData?: boolean) => ()
     expect(action).toEqual(expected);
   });
 
-export const hasType = (...typesArgs: string[]) => (actionsModule: IActionModule, types: ITypesObject) =>
+export const hasType = (...typesArgs: string[]) => (
+  actionsModule: IActionModule,
+  types: ITypesObject
+) =>
   test(`Action types exist in types object`, () => {
     expect(typesArgs).toEqual(Object.values(types));
   });
 
-export const hasFunc = (...funcsArgs: ActionCreator[]) => (actionsModule: IActionModule) =>
+export const hasFunc = (...funcsArgs: ActionCreator[]) => (
+  actionsModule: IActionModule
+) =>
   test(`Action function exist in module default`, () => {
     expect(funcsArgs).toEqual(Object.values(actionsModule));
   });
