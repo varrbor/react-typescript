@@ -1,21 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f86f2487-5c53-4e9c-8fb6-dc8965cdc3f2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/react-typoscript.iml" beforeDir="false" />
+    <list default="true" id="f86f2487-5c53-4e9c-8fb6-dc8965cdc3f2" name="Default Changelist" comment="fix">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/createStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/createStore.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/modules/combineReducers.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/modules/todo_list/actions.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/modules/todo_list/reducer.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/modules/todo_list/types.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducers/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducers/todos.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/todos.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/actions.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/redux-create-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/redux-create-reducer.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,8 +38,17 @@
       <option name="presentableId" value="Default" />
       <updated>1614376886544</updated>
       <workItem from="1614376890221" duration="1085000" />
-      <workItem from="1614540132047" duration="4751000" />
+      <workItem from="1614540132047" duration="5072000" />
+      <workItem from="1614881723391" duration="353000" />
     </task>
+    <task id="LOCAL-00001" summary="fix">
+      <created>1614545212626</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1614545212626</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -68,5 +65,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix" />
   </component>
 </project>
