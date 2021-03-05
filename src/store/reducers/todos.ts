@@ -1,4 +1,4 @@
-import { ADD_NEW_TODO, DELETE_TODO } from '../actions/todos';
+import { ADD_NEW_TODO, DELETE_TODO, SET_TODOS } from '../actions/todos';
 
 export interface ITodos {
   id: string;
@@ -10,7 +10,7 @@ interface IState {
 }
 
 export const initialState: ITodos[] = [
-  { id: Math.random().toString(), text: 'Start·the·course.' },
+
 ];
 
 export const getTodos = (state: IState): ITodos[] => state.todos;
@@ -25,6 +25,9 @@ const todos = (state = initialState, action: IAction) => {
     case ADD_NEW_TODO:
       return [...state, action.payload];
     case DELETE_TODO:
+      return [...action.payload];
+
+    case SET_TODOS:
       return [...action.payload];
     default:
       return state;

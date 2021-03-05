@@ -1,10 +1,9 @@
 import { all } from 'redux-saga/effects';
 
-import input from './input';
-
+import  todoSaga from './todo';
 
 const allSagas = [
-  input,
+  todoSaga,
 ];
 
 export default function* appSagas() {

@@ -2,13 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3256cbc1-80e7-478b-9406-91c9672a9a5c" name="Default Changelist" comment="fixed deleting">
-      <change afterPath="$PROJECT_DIR$/src/store/sagas/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/sagas/input.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc@.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/env.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/types.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/api.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Todos.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todos.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reportWebVitals.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/actions/todos.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/todos.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/createStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/createStore.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers/todos.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/todos.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/sagas/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/sagas/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/sagas/input.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/sagas/todo.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,9 +23,15 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1p9aknBjda7LEsnfjUhK9Qhw1oi" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="autoscrollToSource" value="true" />
@@ -30,13 +43,16 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/store" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="ts.external.directory.path" value="C:\Users\bvarv\react-for -study\react-typescript\node_modules\typescript\lib" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="ts.external.directory.path" value="C:\Users\varrb\react-typescript\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\varrb\react-typescript\src" />
+      <recent name="C:\Users\varrb\react-typescript\src\utils" />
       <recent name="C:\Users\bvarv\react-for -study\react-typescript\src\store" />
     </key>
   </component>
@@ -50,6 +66,8 @@
       <updated>1614597905301</updated>
       <workItem from="1614597907025" duration="8659000" />
       <workItem from="1614686786430" duration="1804000" />
+      <workItem from="1614937944657" duration="5513000" />
+      <workItem from="1614944741201" duration="14279000" />
     </task>
     <task id="LOCAL-00001" summary="added redux dev-tools">
       <created>1614598531582</created>
