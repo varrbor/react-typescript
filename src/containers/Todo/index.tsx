@@ -1,7 +1,7 @@
 import React, { useEffect, Suspense } from 'react';
 import { shallowEqual, useSelector, useDispatch } from 'react-redux';
 import Todos from '../../components/Todos';
-import NewTodo from '../../components/NewTodo';
+import NewTodo from '../../components/Newtodo';
 import { getTodos } from '../../store/reducers/todos';
 
 import Preloader from '../../components/Preloader';

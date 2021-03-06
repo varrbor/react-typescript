@@ -1,13 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3256cbc1-80e7-478b-9406-91c9672a9a5c" name="Default Changelist" comment="fixed router">
+    <list default="true" id="3256cbc1-80e7-478b-9406-91c9672a9a5c" name="Default Changelist" comment="fixed reduser">
+      <change afterPath="$PROJECT_DIR$/.storybook/addons.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.storybook/decorators/Redux.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.storybook/decorators/Router.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.storybook/decorators/Translation.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.storybook/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.storybook/preview-body.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.storybook/preview.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Todos/Todos.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Todos.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todos.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NewTodo.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Newtodo/NewTodo.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NewTodo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Newtodo/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TodoList.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Todos.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todos/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/Todo/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Todo/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Root/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Root/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducers/todos.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/todos.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/sagas/todo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/sagas/todo.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +45,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/containers" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
     <property name="ts.external.directory.path" value="C:\Users\varrb\react-typescript\node_modules\typescript\lib" />
@@ -43,11 +53,16 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\varrb\react-typescript" />
       <recent name="C:\Users\varrb\react-typescript\src\containers" />
       <recent name="C:\Users\varrb\react-typescript\src\pages\Test" />
       <recent name="C:\Users\varrb\react-typescript\src" />
       <recent name="C:\Users\varrb\react-typescript\src\utils" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\varrb\react-typescript\src\components\Todos" />
       <recent name="C:\Users\varrb\react-typescript\src\components" />
+      <recent name="C:\Users\varrb\react-typescript\src\components\Preloader\Newtodo" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -63,6 +78,7 @@
       <workItem from="1614937944657" duration="5513000" />
       <workItem from="1614944741201" duration="17352000" />
       <workItem from="1615038891939" duration="10074000" />
+      <workItem from="1615059645697" duration="3414000" />
     </task>
     <task id="LOCAL-00001" summary="added redux dev-tools">
       <created>1614598531582</created>
@@ -113,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615046141388</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="fixed reduser">
+      <created>1615059727376</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1615059727376</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,6 +160,7 @@
     <MESSAGE value="fixed deleting" />
     <MESSAGE value="added router" />
     <MESSAGE value="fixed router" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed router" />
+    <MESSAGE value="fixed reduser" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed reduser" />
   </component>
 </project>

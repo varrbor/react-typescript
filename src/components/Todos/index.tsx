@@ -2,16 +2,17 @@
 /* eslint-disable react/button-has-type */
 /* eslint-disable jsx-a11y/control-has-associated-label */
 import React from 'react';
-import './TodoList.css';
+import styles from './Todos.module.scss';
+
 
 interface TodosProps {
   items: { id: string; text: string }[];
   onDeleteTodo: (id: string) => void;
 }
-const Todos: React.FC<TodosProps> = props => {
+const Index: React.FC<TodosProps> = props => {
   const { items } = props;
   return (
-    <ul>
+    <ul className={styles.root}>
       {items.map(todo => (
         <li key={todo.id}>
           <span>{todo.text}</span>
@@ -24,4 +25,4 @@ const Todos: React.FC<TodosProps> = props => {
   );
 };
 
-export default Todos;
+export default Index;

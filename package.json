@@ -12,6 +12,8 @@
     "@types/react-router-dom": "^5.1.7",
     "axios": "^0.21.1",
     "connected-react-router": "^6.9.1",
+    "socket.io": "^2.3.0",
+    "socket.io-client": "^2.3.0",
     "history": "4.10.1",
     "moment": "^2.29.1",
     "node-sass": "^5.0.0",
@@ -30,7 +32,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 9009 -s ./public",
+    "build-storybook": "build-storybook -s public"
   },
   "eslintConfig": {
     "extends": [
@@ -63,6 +67,7 @@
     "@types/styled-components": "^4.4.1",
     "@typescript-eslint/eslint-plugin": "^2.14.0",
     "@typescript-eslint/parser": "^2.14.0",
+    "@types/socket.io-client": "^1.4.32",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-prettier": "^6.9.0",
     "eslint-plugin-import": "^2.19.1",
@@ -71,6 +76,18 @@
     "eslint-plugin-react": "^7.17.0",
     "eslint-plugin-react-hooks": "^1.7.0",
     "prettier": "^1.19.1",
-    "typescript": "^3.7.4"
+    "typescript": "^3.7.4",
+    "@storybook/addon-a11y": "^5.2.8",
+    "@storybook/addon-actions": "^5.2.8",
+    "@storybook/addon-knobs": "^5.2.8",
+    "@storybook/addon-links": "^5.2.8",
+    "@storybook/addon-viewport": "^5.2.8",
+    "@storybook/addons": "^5.2.8",
+    "@storybook/preset-create-react-app": "^1.5.2",
+    "@storybook/react": "^5.2.8",
+    "storybook-addon-i18n": "^5.1.13",
+    "storybook-addon-jsx": "^7.2.3",
+    "storybook-addon-redux-listener": "^0.1.7",
+    "@types/classnames": "^2.2.10"
   }
 }
