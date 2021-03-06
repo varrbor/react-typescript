@@ -18,8 +18,6 @@ export const getIncident = () => api.get<ITodo>(urls.todos);
 export const addTodoCall = (data:ITodo ) => api.post(urls.todos, data);
 // export const deleteTodoCall = (id:string ) => api.delete(urls.todos, { id });
 export const deleteTodoCall = (id:string ) => {
-  console.log(id);
-  console.log(`https://react-typescript-8f5ff-default-rtdb.firebaseio.com/todo/${id}.json`);
   return axios.delete(
   `https://react-typescript-8f5ff-default-rtdb.firebaseio.com/todo/${id}.json`)};
 

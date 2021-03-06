@@ -2,20 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3256cbc1-80e7-478b-9406-91c9672a9a5c" name="Default Changelist" comment="fixed deleting">
-      <change afterPath="$PROJECT_DIR$/src/env.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/types.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/api.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Todos.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todos.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reportWebVitals.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/actions/todos.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/todos.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/createStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/createStore.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/reducers/todos.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/todos.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/sagas/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/sagas/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/sagas/input.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/sagas/todo.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/sagas/todo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/sagas/todo.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/api.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +59,7 @@
       <workItem from="1614597907025" duration="8659000" />
       <workItem from="1614686786430" duration="1804000" />
       <workItem from="1614937944657" duration="5513000" />
-      <workItem from="1614944741201" duration="14279000" />
+      <workItem from="1614944741201" duration="17352000" />
     </task>
     <task id="LOCAL-00001" summary="added redux dev-tools">
       <created>1614598531582</created>
@@ -90,7 +82,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614677736547</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fixed deleting">
+      <created>1614971483434</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1614971483434</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
