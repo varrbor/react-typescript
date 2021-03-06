@@ -2,12 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3256cbc1-80e7-478b-9406-91c9672a9a5c" name="Default Changelist" comment="fixed deleting">
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/ADT.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/Shape.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/Shield.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/Subtract.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/alarmOffGreen.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/cancelAlarmGreen.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/cancelAlarmIcon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/eye.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/group_work-24px.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/loading-blue.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/sendButton.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/verifyAlarmIcon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Preloader/Preloader.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Preloader/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Preloader/story.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Preloader/test.spec.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/Todo/AlarmConfirmation.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/Todo/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/Todo/story.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Root/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Test/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/variables.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/actions/todos.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/todos.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducers/todos.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/todos.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/sagas/todo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/sagas/todo.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Todos.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todos.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +56,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/containers" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
     <property name="ts.external.directory.path" value="C:\Users\varrb\react-typescript\node_modules\typescript\lib" />
@@ -43,9 +64,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\varrb\react-typescript\src\containers" />
+      <recent name="C:\Users\varrb\react-typescript\src\pages\Test" />
       <recent name="C:\Users\varrb\react-typescript\src" />
       <recent name="C:\Users\varrb\react-typescript\src\utils" />
-      <recent name="C:\Users\bvarv\react-for -study\react-typescript\src\store" />
+      <recent name="C:\Users\varrb\react-typescript\src\components" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -60,6 +83,7 @@
       <workItem from="1614686786430" duration="1804000" />
       <workItem from="1614937944657" duration="5513000" />
       <workItem from="1614944741201" duration="17352000" />
+      <workItem from="1615038891939" duration="5963000" />
     </task>
     <task id="LOCAL-00001" summary="added redux dev-tools">
       <created>1614598531582</created>
@@ -89,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614971483434</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fixed deleting">
+      <created>1615022429485</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1615022429485</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

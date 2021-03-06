@@ -1,0 +1,17 @@
+@import '../../variables';
+.root {
+ padding: pxToRem(15px);
+  .cancel, .verify {
+    font-weight: bold;
+    font-size: pxToRem(14px);
+    line-height: pxToRem(17px);
+    letter-spacing: pxToRem(1px);
+    text-transform: uppercase;
+    padding: pxToRem(10px) 0;
+    color: $white;
+  }
+  .cancel[disabled] {
+    color: $white;
+  }
+}
+

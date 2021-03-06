@@ -1,0 +1,27 @@
+@import '../../utils/variables';
+.root {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 100vh;
+  left: 0; right: 0; bottom: 0;
+  z-index: 10;
+}
+
+.background {
+  background-color: $white;
+  opacity: 0.9;
+  position: absolute;
+  height: 100vh;
+  left: 0; right: 0; bottom: 0;
+  z-index: 9;
+}
+
+.image {
+  width: pxToRem(92px);
+  height: pxToRem(89px);
+  text-align: center;
+}
