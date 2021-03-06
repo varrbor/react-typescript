@@ -10,7 +10,6 @@ interface TodosProps {
 }
 const Todos: React.FC<TodosProps> = props => {
   const { items } = props;
-  console.log('items', items);
   return (
     <ul>
       {items.map(todo => (

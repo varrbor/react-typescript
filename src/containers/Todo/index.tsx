@@ -3,9 +3,7 @@ import { shallowEqual, useSelector, useDispatch } from 'react-redux';
 import Todos from '../../components/Todos';
 import NewTodo from '../../components/NewTodo';
 import { getTodos } from '../../store/reducers/todos';
-import { Route, Switch, BrowserRouter } from 'react-router-dom';
-import { ConnectedRouter } from 'connected-react-router';
-// import { history } from './store/createStore';
+
 import Preloader from '../../components/Preloader';
 
 
@@ -14,7 +12,8 @@ import { clearConfigCache } from 'prettier';
 
 const App: React.FC = () => {
 
-  const todos = useSelector(getTodos, shallowEqual);
+  const  todos = useSelector(getTodos, shallowEqual);
+  console.log(11111, todos.todos);
 
   const dispatch = useDispatch();
   useEffect(() => {
@@ -35,14 +34,14 @@ const App: React.FC = () => {
     );
   };
   const todoDeleteHandler = (todoId: string) => {
-    const updatedTodos = todos.filter(todo => todo.id !== todoId);
+    const updatedTodos = todos.todos.filter(todo => todo.id !== todoId);
     dispatch(deleteTodoRequest({id: todoId, text: updatedTodos}));
   };
 
   return (
     <div>
       <NewTodo onAddTodo={todoAddHandler} />
-      <Todos items={todos} onDeleteTodo={todoDeleteHandler} />
+      <Todos items={todos.todos} onDeleteTodo={todoDeleteHandler} />
     </div>
   );
 };

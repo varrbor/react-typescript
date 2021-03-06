@@ -1,34 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3256cbc1-80e7-478b-9406-91c9672a9a5c" name="Default Changelist" comment="fixed deleting">
-      <change afterPath="$PROJECT_DIR$/src/assets/icons/ADT.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/icons/Shape.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/icons/Shield.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/icons/Subtract.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/icons/alarmOffGreen.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/icons/cancelAlarmGreen.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/icons/cancelAlarmIcon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/icons/eye.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/icons/group_work-24px.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/icons/loading-blue.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/icons/sendButton.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/icons/verifyAlarmIcon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Preloader/Preloader.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Preloader/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Preloader/story.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Preloader/test.spec.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/Todo/AlarmConfirmation.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/Todo/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/Todo/story.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Root/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Test/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/variables.scss" afterDir="false" />
+    <list default="true" id="3256cbc1-80e7-478b-9406-91c9672a9a5c" name="Default Changelist" comment="fixed router">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Todos.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todos.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Todo/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Todo/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Root/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Root/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers/todos.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/todos.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/sagas/todo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/sagas/todo.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +62,7 @@
       <workItem from="1614686786430" duration="1804000" />
       <workItem from="1614937944657" duration="5513000" />
       <workItem from="1614944741201" duration="17352000" />
-      <workItem from="1615038891939" duration="5963000" />
+      <workItem from="1615038891939" duration="10074000" />
     </task>
     <task id="LOCAL-00001" summary="added redux dev-tools">
       <created>1614598531582</created>
@@ -120,7 +99,21 @@
       <option name="project" value="LOCAL" />
       <updated>1615022429485</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added router">
+      <created>1615045954452</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1615045954452</updated>
+    </task>
+    <task id="LOCAL-00007" summary="fixed router">
+      <created>1615046141388</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1615046141388</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,6 +135,8 @@
     <MESSAGE value="added redux dev-tools" />
     <MESSAGE value="fixed reducer" />
     <MESSAGE value="fixed deleting" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed deleting" />
+    <MESSAGE value="added router" />
+    <MESSAGE value="fixed router" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed router" />
   </component>
 </project>

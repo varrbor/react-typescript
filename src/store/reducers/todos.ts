@@ -7,13 +7,15 @@ export interface ITodos {
 
 interface IState {
   todos: ITodos[];
+  isLoading: boolean;
 }
 
-export const initialState: ITodos[] = [
+export const initialState: IState = {
+  todos: [],
+  isLoading: false,
+};
 
-];
-
-export const getTodos = (state: IState): ITodos[] => state.todos;
+export const getTodos = (state: {todos: IState}): IState => state.todos;
 
 export interface IAction {
   type: string;
@@ -23,14 +25,24 @@ export interface IAction {
 const todos = (state = initialState, action: IAction) => {
   switch (action.type) {
     case ADD_NEW_TODO:
-      return [...state, action.payload];
+      return ({
+        ...state,
+        todos: [...state.todos, action.payload],
+      });
     case DELETE_TODO:
-      return [...action.payload];
+      return ({
+        ...state,
+        todos: [...action.payload],
+      });
 
     case SET_TODOS:
-      return [...action.payload];
+      return ({
+        ...state,
+        todos: [...action.payload],
+      });
     default:
       return state;
   }
 };
 export default todos;
+
