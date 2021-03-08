@@ -1,48 +1,22 @@
-import { RequestHandler } from 'express';
+import { Response, Request } from 'express'
+import { ITodo } from './../types/todo'
+import Todo from '../models/todo'
 
-import { Todo } from '../models/todo';
+const addTodo = async (req: Request, res: Response): Promise<void> => {
+  try {
+    const body = req.body as Pick<ITodo, 'text'>
 
-const TODOS: Todo[] = [];
+    const todo: ITodo = new Todo({
+      text: body.text,
+    })
 
-export const createTodo: RequestHandler = (req, res, next) => {
-  const text = (req.body as { text: string }).text;
-  const newTodo = new Todo(Math.random().toString(), text);
+    const newTodo: ITodo = await todo.save()
+    const allTodos: ITodo[] = await Todo.find()
 
-  TODOS.push(newTodo);
-
-  res.status(201).json({ message: 'Created the todo.', createdTodo: newTodo });
-};
-
-export const getTodos: RequestHandler = (req, res, next) => {
-  res.json({ todos: TODOS });
-};
-
-export const updateTodo: RequestHandler<{ id: string }> = (req, res, next) => {
-  const todoId = req.params.id;
-
-  const updatedText = (req.body as { text: string }).text;
-
-  const todoIndex = TODOS.findIndex(todo => todo.id === todoId);
-
-  if (todoIndex < 0) {
-    throw new Error('Could not find todo!');
+    res.status(201).json({ message: 'Todo added', todo: newTodo, todos: allTodos })
+  } catch (error) {
+    throw error
   }
+}
 
-  TODOS[todoIndex] = new Todo(TODOS[todoIndex].id, updatedText);
-
-  res.json({ message: 'Updated!', updatedTodo: TODOS[todoIndex] });
-};
-
-export const deleteTodo: RequestHandler = (req, res, next) => {
-  const todoId = req.params.id;
-
-  const todoIndex = TODOS.findIndex(todo => todo.id === todoId);
-
-  if (todoIndex < 0) {
-    throw new Error('Could not find todo!');
-  }
-
-  TODOS.splice(todoIndex, 1);
-
-  res.json({ message: 'Todo deleted!' });
-};
+export { addTodo }

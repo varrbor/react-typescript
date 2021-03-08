@@ -2,16 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3256cbc1-80e7-478b-9406-91c9672a9a5c" name="Default Changelist" comment="fixed reduser">
-      <change afterPath="$PROJECT_DIR$/server/.gitignore@" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/app.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/controllers/todos.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/models/todo.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/routes/todos.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/nodemon.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/types/todo.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/app.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/app.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/controllers/todos.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/controllers/todos.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/models/todo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/models/todo.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/routes/todos.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/routes/todos.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +38,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/server" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/server/src" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
     <property name="ts.external.directory.path" value="C:\Users\varrb\react-typescript\node_modules\typescript\lib" />
@@ -47,11 +46,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\varrb\react-typescript\server\src" />
+      <recent name="C:\Users\varrb\react-typescript\server\src\models" />
       <recent name="C:\Users\varrb\react-typescript\server" />
       <recent name="C:\Users\varrb\react-typescript" />
       <recent name="C:\Users\varrb\react-typescript\src\containers" />
-      <recent name="C:\Users\varrb\react-typescript\src\pages\Test" />
-      <recent name="C:\Users\varrb\react-typescript\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\varrb\react-typescript\src\components\Todos" />
@@ -76,6 +75,7 @@
       <workItem from="1615114990547" duration="517000" />
       <workItem from="1615135535768" duration="2889000" />
       <workItem from="1615144334897" duration="3399000" />
+      <workItem from="1615159451219" duration="6030000" />
     </task>
     <task id="LOCAL-00001" summary="added redux dev-tools">
       <created>1614598531582</created>
