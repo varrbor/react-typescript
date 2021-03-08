@@ -5,13 +5,13 @@ import axios from 'axios';
 const p = pack as any;
 
 export enum urls {
-  todos = '/todo.json',
+  todos = '/todos',
   addTodo = '/add-todo.json',
   deleteTodo = '/delete-todo.json',
 }
 
 export const api = axios.create({
-  baseURL: 'https://react-typescript-8f5ff-default-rtdb.firebaseio.com/',
+  baseURL: 'http://localhost:4000',
 });
 
 export const getIncident = () => api.get<ITodo>(urls.todos);

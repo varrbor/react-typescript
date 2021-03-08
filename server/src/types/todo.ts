@@ -1,11 +1,7 @@
-import { Document } from 'mongoose'
+import { Document } from 'mongoose';
 
 export interface ITodo extends Document {
-    text: string
+  name: string,
+  description: string,
+  status: boolean
 }
-
-export interface IProduct extends Document {
-    name: string
-}
-
-

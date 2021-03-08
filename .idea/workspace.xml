@@ -2,15 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3256cbc1-80e7-478b-9406-91c9672a9a5c" name="Default Changelist" comment="fixed reduser">
-      <change afterPath="$PROJECT_DIR$/server/nodemon.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/types/todo.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/server/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/nodemon.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/nodemon.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/readme.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/app.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/app.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/controllers/todos.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/controllers/todos.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/controllers/todos.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/models/todo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/models/todo.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/routes/todos.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/routes/todos.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/routes/todos.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/types/todo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/types/todo.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/api.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

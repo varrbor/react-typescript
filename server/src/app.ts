@@ -1,27 +1,29 @@
-import express, { Request, Response, NextFunction } from 'express';
-import { json } from 'body-parser';
+import express, { Express } from 'express';
 import mongoose from 'mongoose';
-import todoRoutes from './routes/todos';
+import cors from 'cors';
+import todoRoutes from './routes';
 
-const app = express();
-const options = { useNewUrlParser: true, useUnifiedTopology: true }
-mongoose.set('useFindAndModify', false)
-app.use(json());
 
-app.use('/todos', todoRoutes);
+const app: Express = express();
+const morgan = require('morgan')
 
-app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
-  res.status(500).json({ message: err.message });
-});
+const PORT: string | number = process.env.PORT || 4000;
+
+app.use(cors());
+app.use(todoRoutes);
+app.use(morgan('dev'))
+
+const uri: string = `mongodb+srv://root:y60s73A71toUpKrk@devconnector.mufnt.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
+const options = { useNewUrlParser: true, useUnifiedTopology: true };
+mongoose.set('useFindAndModify', false);
 
 mongoose
-  .connect(
-    'mongodb+srv://root:y60s73A71toUpKrk@devconnector.mufnt.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', options
-  )
-  .then(result => {
-    // console.log(result);
-    app.listen(4000);
-  })
-  .catch(err => {
-    console.log(err);
-  });
+	.connect(uri, options)
+	.then(() =>
+		app.listen(PORT, () =>
+			console.log(`Server running on http://localhost:${PORT}`)
+		)
+	)
+	.catch((error) => {
+		throw error;
+	});
