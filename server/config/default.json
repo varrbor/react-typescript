@@ -1,0 +1,5 @@
+{
+  "port": 8008,
+  "mongoUri": "mongodb+srv://root:y60s73A71toUpKrk@devconnector.mufnt.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+  "jwtSecret": "lifeup key"
+}

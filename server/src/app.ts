@@ -1,7 +1,8 @@
 import express, { Express } from 'express';
 import mongoose from 'mongoose';
 import cors from 'cors';
-import todoRoutes from './routes';
+import todoRoutes from './routes/todos.routes';
+import authRoutes from './routes/auth.routes';
 
 const app: Express = express();
 const bodyParser = require('body-parser');
@@ -12,6 +13,7 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(todoRoutes);
+app.use('/api/auth', authRoutes);
 
 const uri: string = `mongodb+srv://root:y60s73A71toUpKrk@devconnector.mufnt.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
 const options = { useNewUrlParser: true, useUnifiedTopology: true };
