@@ -21,7 +21,8 @@ export function* fetchTodosSaga() {
             id: key
           });
         }
-        yield put(setTodos(fetchedTodos));
+        console.log(111,data.todos);
+        yield put(setTodos(data.todos));
         return;
       }
     } catch (e) {
@@ -41,6 +42,7 @@ export function* addNewTodoSaga({ payload }: IAction) {
 
 export function* deleteTodoSaga( payload: any) {
   try {
+    console.log(3333,payload.payload.id);
     yield call(deleteTodoCall,  payload.payload.id );
     yield put(deleteTodo( payload.payload.text ));
     return;

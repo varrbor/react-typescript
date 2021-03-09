@@ -1,7 +1,6 @@
 import { Document } from 'mongoose';
 
 export interface ITodo extends Document {
-  name: string,
-  description: string,
-  status: boolean
+  _id: string,
+  text: string,
 }

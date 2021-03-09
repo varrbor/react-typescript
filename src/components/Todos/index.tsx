@@ -6,17 +6,18 @@ import styles from './Todos.module.scss';
 
 
 interface TodosProps {
-  items: { id: string; text: string }[];
+  items: { _id: string; text: string }[];
   onDeleteTodo: (id: string) => void;
 }
 const Index: React.FC<TodosProps> = props => {
   const { items } = props;
+  console.log(2222,items);
   return (
     <ul className={styles.root}>
       {items.map(todo => (
-        <li key={todo.id}>
+        <li key={todo._id}>
           <span>{todo.text}</span>
-          <button onClick={props.onDeleteTodo.bind(null, todo.id)}>
+          <button onClick={props.onDeleteTodo.bind(null, todo._id)}>
             DELETE
           </button>
         </li>

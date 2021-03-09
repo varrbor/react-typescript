@@ -34,7 +34,7 @@ const App: React.FC = () => {
     );
   };
   const todoDeleteHandler = (todoId: string) => {
-    const updatedTodos = todos.todos.filter(todo => todo.id !== todoId);
+    const updatedTodos = todos.todos.filter(todo => todo._id !== todoId);
     dispatch(deleteTodoRequest({id: todoId, text: updatedTodos}));
   };
 

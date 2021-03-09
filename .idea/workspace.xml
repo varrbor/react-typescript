@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3256cbc1-80e7-478b-9406-91c9672a9a5c" name="Default Changelist" comment="fixed reduser">
+    <list default="true" id="3256cbc1-80e7-478b-9406-91c9672a9a5c" name="Default Changelist" comment="fixed node server">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/server/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/nodemon.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/nodemon.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/readme.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/app.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/app.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/controllers/todos.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/controllers/todos/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/controllers/todos/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/models/todo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/models/todo.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/routes/todos.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/types/todo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/types/todo.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Todos/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todos/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Todo/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Todo/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers/todos.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/todos.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/sagas/todo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/sagas/todo.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/api.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -80,6 +77,7 @@
       <workItem from="1615135535768" duration="2889000" />
       <workItem from="1615144334897" duration="3399000" />
       <workItem from="1615159451219" duration="6030000" />
+      <workItem from="1615274366130" duration="311000" />
     </task>
     <task id="LOCAL-00001" summary="added redux dev-tools">
       <created>1614598531582</created>
@@ -137,7 +135,21 @@
       <option name="project" value="LOCAL" />
       <updated>1615059727376</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="fixed node server">
+      <created>1615236181568</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1615236181568</updated>
+    </task>
+    <task id="LOCAL-00010" summary="fixed node server">
+      <created>1615236201859</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1615236201859</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,6 +174,7 @@
     <MESSAGE value="added router" />
     <MESSAGE value="fixed router" />
     <MESSAGE value="fixed reduser" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed reduser" />
+    <MESSAGE value="fixed node server" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed node server" />
   </component>
 </project>

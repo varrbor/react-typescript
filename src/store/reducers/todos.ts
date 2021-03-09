@@ -1,7 +1,7 @@
 import { ADD_NEW_TODO, DELETE_TODO, SET_TODOS } from '../actions/todos';
 
 export interface ITodos {
-  id: string;
+  _id: string;
   text: string;
 }
 
