@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+:root{
+  --primary-color: rgb(42, 145, 241);
+  --secondary-color: rgb(17, 62, 104);
+  --dark-color: rgb(17, 17, 17);
+  --grey-color: #a1a1a1;
+  --light-color: rgb(247, 244, 244);
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  font-family: 'Lato', sans-serif;
+  height: 100vh;
+  width: 100vw;
+  justify-content: space-between;
+  background-color: rgb(241, 241, 241);
+}

@@ -1,7 +1,8 @@
 import React  from 'react';
 import { Route, Switch, BrowserRouter } from 'react-router-dom';
 import Root from './pages/Root';
-import Test from './pages/Test';
+import Login from './pages/Login';
+import Register from './pages/Register';
 
 const App: React.FC = () => {
   return (
@@ -9,7 +10,8 @@ const App: React.FC = () => {
       <BrowserRouter>
           <Switch>
             <Route exact path="/" component={Root} />
-            <Route path="/test" component={Test} />
+            <Route path="/login" component={Login} />
+            <Route path="/register" component={Register} />
           </Switch>
       </BrowserRouter>
     </div>

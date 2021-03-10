@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3256cbc1-80e7-478b-9406-91c9672a9a5c" name="Default Changelist" comment="fixed node server">
-      <change afterPath="$PROJECT_DIR$/server/config/default.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/config/production.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/controllers/auth/auth.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/models/user.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/routes/auth.routes.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/types/user.ts" afterDir="false" />
+    <list default="true" id="3256cbc1-80e7-478b-9406-91c9672a9a5c" name="Default Changelist" comment="added auth">
+      <change afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/Login/Login.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/Login/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/Register/Register.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/Register/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Login/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Register/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/app.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/app.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/routes/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/routes/todos.routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.test.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +40,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/server" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/containers/Login" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
     <property name="ts.external.directory.path" value="C:\Users\varrb\react-typescript\node_modules\typescript\lib" />
@@ -48,18 +48,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\varrb\react-typescript\server" />
-      <recent name="C:\Users\varrb\react-typescript\server\src" />
-      <recent name="C:\Users\varrb\react-typescript\server\src\models" />
-      <recent name="C:\Users\varrb\react-typescript" />
-      <recent name="C:\Users\varrb\react-typescript\src\containers" />
+      <recent name="C:\Users\varrb\react-typescript\src\containers\Login" />
+      <recent name="C:\Users\varrb\react-typescript\src" />
+      <recent name="C:\Users\varrb\react-typescript\src\containers\Register" />
+      <recent name="C:\Users\varrb\react-typescript\src\Register" />
+      <recent name="C:\Users\varrb\react-typescript\src\components\Login" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\varrb\react-typescript\src\containers" />
       <recent name="C:\Users\varrb\react-typescript\server\src\routes" />
       <recent name="C:\Users\varrb\react-typescript\server\src\controllers\auth" />
       <recent name="C:\Users\varrb\react-typescript\server\src\models" />
       <recent name="C:\Users\varrb\react-typescript\server\src\controllers" />
-      <recent name="C:\Users\varrb\react-typescript\src\components\Todos" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -82,7 +82,9 @@
       <workItem from="1615159451219" duration="6030000" />
       <workItem from="1615274366130" duration="1227000" />
       <workItem from="1615280074983" duration="239000" />
-      <workItem from="1615281803608" duration="18284000" />
+      <workItem from="1615281803608" duration="18976000" />
+      <workItem from="1615327200456" duration="1801000" />
+      <workItem from="1615360984043" duration="4904000" />
     </task>
     <task id="LOCAL-00001" summary="added redux dev-tools">
       <created>1614598531582</created>
@@ -161,7 +163,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615274694971</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="added auth">
+      <created>1615319665303</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1615319665303</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,6 +196,7 @@
     <MESSAGE value="fixed router" />
     <MESSAGE value="fixed reduser" />
     <MESSAGE value="fixed node server" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed node server" />
+    <MESSAGE value="added auth" />
+    <option name="LAST_COMMIT_MESSAGE" value="added auth" />
   </component>
 </project>
