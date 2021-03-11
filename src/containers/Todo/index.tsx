@@ -8,12 +8,11 @@ import Preloader from '../../components/Preloader';
 
 
 import { addTodo, deleteTodo, fetchTodos, adTodoRequest, deleteTodoRequest } from '../../store/actions/todos';
-import { clearConfigCache } from 'prettier';
 
 const App: React.FC = () => {
 
-  const  todos = useSelector(getTodos, shallowEqual);
-  console.log(11111, todos.todos);
+  const  {todos} = useSelector(getTodos, shallowEqual);
+  console.log(11111, todos);
 
   const dispatch = useDispatch();
   useEffect(() => {
@@ -34,14 +33,14 @@ const App: React.FC = () => {
     );
   };
   const todoDeleteHandler = (todoId: string) => {
-    const updatedTodos = todos.todos.filter(todo => todo._id !== todoId);
+    const updatedTodos = todos.filter(todo => todo._id !== todoId);
     dispatch(deleteTodoRequest({id: todoId, text: updatedTodos}));
   };
 
   return (
     <div>
       <NewTodo onAddTodo={todoAddHandler} />
-      <Todos items={todos.todos} onDeleteTodo={todoDeleteHandler} />
+      <Todos items={todos} onDeleteTodo={todoDeleteHandler} />
     </div>
   );
 };
