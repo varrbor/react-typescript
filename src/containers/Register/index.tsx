@@ -4,20 +4,16 @@
 import React from 'react';
 import { shallowEqual, useSelector, useDispatch } from 'react-redux';
 import { getRegister } from '../../store/reducers/register';
-import { IRegisterForm, INameInput, IEmailInput,IPasswordInput} from '../../store/reducers/register';
+import { INameInput } from '../../store/types';
 import { checkValidity } from '../../utils/utility';
 
-import styles from './Register.module.scss';
-import cx from 'classnames';
-import { getTodos } from '../../store/reducers/todos';
 import RegisterForm from '../../components/RegisterForm';
-import { fetchUser, updateInput } from '../../store/actions/auth';
+import { fetchUser, updateRegisterInput } from '../../store/actions/auth';
 
 const Register: React.FC = () => {
-  const  {registerForm, isLoading} = useSelector(getRegister, shallowEqual);
+  const  { registerForm, isLoading } = useSelector(getRegister, shallowEqual);
   const dispatch = useDispatch();
 
-  console.log(111, registerForm);
   const formElementsArray = [];
   // @ts-ignore
   for (let key: any in registerForm) {
@@ -43,6 +39,7 @@ const Register: React.FC = () => {
   }
 
   const inputChangedHandler = (event:any, inputIdentifier: INameInput) => {
+
     const updatedOrderForm = {
       ...registerForm
     };
@@ -62,7 +59,7 @@ const Register: React.FC = () => {
       formIsValid = updatedOrderForm[inputIdentifier].valid && formIsValid;
     }
     dispatch(
-      updateInput({identifier: inputIdentifier, val: updatedFormElement, formIsValid: formIsValid})
+      updateRegisterInput({identifier: inputIdentifier, val: updatedFormElement, formIsValid: formIsValid})
     );
   }
   return (

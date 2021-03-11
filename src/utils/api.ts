@@ -9,6 +9,7 @@ export enum urls {
   addTodo = '/add-todo',
   deleteTodo = '/delete-todo',
   fetchUser = '/api/auth/register',
+  loginUser = '/api/auth/login',
 }
 
 export const api = axios.create({
@@ -21,10 +22,12 @@ export const deleteTodoCall = (id:string ) => {
   return axios.delete(
   `http://localhost:4000/delete-todo/${id}`)};
 export const registerUser = (data:IRegisterForm ) => api.post(urls.fetchUser, data);
+export const loginUser = (data:IRegisterForm ) => api.post(urls.loginUser, data);
 
 export default {
   urls,
   postMessage,
   getIncident,
   registerUser,
+  loginUser,
 };
