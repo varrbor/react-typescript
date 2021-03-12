@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+
+.navContainer{
+  height: 60px;
+  background-color: var(--primary-color);
+  border-bottom: 1px solid var(--grey-color);
+}
+
+nav{
+  display: flex;
+  margin: auto 40px;
+  justify-content: space-between;
+  height: 100%;
+}
+
+nav ul{
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  width: 200px;
+}
+
+nav ul li{
+  margin: auto;
+}
+
+
+nav>*{
+  margin: auto 10px;
+}
+
+
+nav .searchSection{
+  flex: 3;
+  padding-left: 6%;
+}
+
+nav .btn{
+  display: inline-block;
+  width: 100px;
+  border-radius: 0;
+}
+
+nav .searchSection input[id='search']{
+  margin-left: 20px;
+  height: 27px;
+}
+
+nav a{
+  text-decoration: none;
+  color: var(--dark-color);
+  font-weight: 600;
+  font-size: 14px;
+}
+
+nav a:hover{
+  color: var(--primary-color);
+}
+
+

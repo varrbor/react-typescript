@@ -6,7 +6,7 @@ import Register from './pages/Register';
 
 const App: React.FC = () => {
   return (
-    <div className="App">
+    <div>
       <BrowserRouter>
           <Switch>
             <Route exact path="/" component={Root} />
