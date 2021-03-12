@@ -1,20 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3256cbc1-80e7-478b-9406-91c9672a9a5c" name="Default Changelist" comment="added register request">
-      <change afterPath="$PROJECT_DIR$/src/components/LoginForm/LoginForm.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/LoginForm/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/LoginForm/test.spec.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/reducers/login.ts" afterDir="false" />
+    <list default="true" id="3256cbc1-80e7-478b-9406-91c9672a9a5c" name="Default Changelist" comment="added login request">
+      <change afterPath="$PROJECT_DIR$/server/src/middlewares/auth.middleware.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/middlewares/validation.middleware.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/types/types.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/RegisterForm/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RegisterForm/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Login/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Login/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Register/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Register/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/actions/auth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/auth.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducers/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducers/register.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/register.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/routes/todos.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/routes/todos.routes.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/sagas/auth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/sagas/auth.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/types.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/api.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,7 +39,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/LoginForm" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/server/src/types" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
     <property name="ts.external.directory.path" value="C:\Users\varrb\react-typescript\node_modules\typescript\lib" />
@@ -54,11 +47,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\varrb\react-typescript\server\src\types" />
+      <recent name="C:\Users\varrb\react-typescript\server\src" />
       <recent name="C:\Users\varrb\react-typescript\src\components\LoginForm" />
       <recent name="C:\Users\varrb\react-typescript\src\utils" />
       <recent name="C:\Users\varrb\react-typescript\src\components\Register" />
-      <recent name="C:\Users\varrb\react-typescript\src\containers\Login" />
-      <recent name="C:\Users\varrb\react-typescript\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\varrb\react-typescript\src\containers" />
@@ -92,7 +85,8 @@
       <workItem from="1615327200456" duration="1801000" />
       <workItem from="1615360984043" duration="9161000" />
       <workItem from="1615395268266" duration="13214000" />
-      <workItem from="1615448462665" duration="14596000" />
+      <workItem from="1615448462665" duration="17409000" />
+      <workItem from="1615571141039" duration="2742000" />
     </task>
     <task id="LOCAL-00001" summary="added redux dev-tools">
       <created>1614598531582</created>
@@ -192,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615468933966</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="added login request">
+      <created>1615487643299</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1615487643299</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -221,6 +222,7 @@
     <MESSAGE value="added auth" />
     <MESSAGE value="added Pages and Login and Register html" />
     <MESSAGE value="added register request" />
-    <option name="LAST_COMMIT_MESSAGE" value="added register request" />
+    <MESSAGE value="added login request" />
+    <option name="LAST_COMMIT_MESSAGE" value="added login request" />
   </component>
 </project>

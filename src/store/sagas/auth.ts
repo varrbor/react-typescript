@@ -38,7 +38,11 @@ export function* createUserSaga({ payload }: IAction) {
 
 export function* loginUserSaga({ payload }: IAction) {
   try {
-    yield call(loginUser,  payload );
+    const {data} = yield call(loginUser, payload);
+    console.log(123456, data.data.token);
+    const maxAge = 3600 * 24 * 30;
+    document.cookie = `jwtToken=${data.data.token}; max-age=${maxAge}`;
+    document.cookie = `userId=${data.data.userId}; max-age=${maxAge}`;
     return;
   } catch (e) {
     console.error(e);
