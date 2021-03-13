@@ -2,6 +2,7 @@ import { API_BASE_URL } from '../env';
 import pack from '../../package.json';
 import axios from 'axios';
 import { IRegisterForm } from '../store/reducers/register';
+import { getAuthData } from '../utils/cookies';
 const p = pack as any;
 
 export enum urls {
@@ -18,28 +19,7 @@ export const api = axios.create({
     "Content-Type": "application/json"
   }
 });
-export const getAuthData = () => {
-  const jwtTokenCookie: RegExpMatchArray | null = document.cookie.match(
-    `(^|; )jwtToken=([^;]*)`
-  );
-  const userIdCookie: RegExpMatchArray | null = document.cookie.match(
-    `(^|; )userId=([^;]*)`
-  );
 
-  if (jwtTokenCookie) {
-    const token: string = jwtTokenCookie[2];
-    const userId: string = userIdCookie![2];
-
-    return {
-      token,
-      userId,
-    };
-  }
-  return {
-    token: null,
-    userId: null,
-  };
-};
 console.log(444,document.cookie);
 api.interceptors.request.use(config => {
   const token = getAuthData().token;

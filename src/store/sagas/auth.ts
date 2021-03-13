@@ -5,9 +5,14 @@ import {
   UPDATE_REGISTER_INPUT,
   UPDATE_LOGIN_INPUT,
   updateRegisterInputAction,
-  updateLoginInputAction, LOGIN_USER,
+  updateLoginInputAction,
+  LOGIN_USER,
+  LOGOUT_USER,
+  isAuthorized,
 } from '../actions/auth';
 import { IAction } from '../reducers/todos';
+import { getAuthData } from '../../utils/cookies';
+
 
 export function* updateRegisterInputSaga({ payload }: IAction) {
   try {
@@ -41,6 +46,9 @@ export function* loginUserSaga({ payload }: IAction) {
     const {data} = yield call(loginUser, payload);
     console.log(123456, data.data.token);
     const maxAge = 3600 * 24 * 30;
+    if(data.data.token) {
+      yield put(isAuthorized())
+    }
     document.cookie = `jwtToken=${data.data.token}; max-age=${maxAge}`;
     document.cookie = `userId=${data.data.userId}; max-age=${maxAge}`;
     return;
@@ -48,10 +56,31 @@ export function* loginUserSaga({ payload }: IAction) {
     console.error(e);
   }
 }
+export function* logoutUserSaga({ payload }: IAction) {
+  try {
+    document.cookie = `jwtToken=''; max-age=-1`;
+    document.cookie = `userId=''; max-age=-1`;
+    return;
+  } catch (e) {
+    console.error(e);
+  }
+}
 
-export default function* authSaga() {
+export function* authT() {
+  try {
+    console.log('varrbor', getAuthData().token);
+    if (getAuthData().token) {
+      yield put(isAuthorized())
+    }
+  } catch (err) {
+    console.log(err);
+  }
+}
+
+export function* authSaga() {
   yield takeEvery(UPDATE_REGISTER_INPUT, updateRegisterInputSaga);
   yield takeEvery(UPDATE_LOGIN_INPUT, updateLoginInputSaga);
   yield takeEvery(FETCH_USER, createUserSaga);
   yield takeEvery(LOGIN_USER, loginUserSaga);
+  yield takeEvery(LOGOUT_USER, logoutUserSaga);
 }

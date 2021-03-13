@@ -3,10 +3,18 @@ import styles from './Header.module.scss';
 import preloader from '../../assets/icons/loading-blue.gif';
 // import  { IRegisterForm } from '../../store/reducers/register';
 import cx from 'classnames';
+import { logOutUser } from '../../store/actions/auth';
+import { shallowEqual, useSelector, useDispatch } from 'react-redux';
+import { getLogin } from '../../store/reducers/login';
 
 
 const Header: React.FC = () => {
+  const  {isAuthorized} = useSelector(getLogin, shallowEqual);
+  const dispatch = useDispatch();
 
+  const logoutHandler = () => {
+    dispatch(logOutUser());
+  };
   return (
     <div className={styles.navContainer}>
       <nav>
@@ -15,7 +23,7 @@ const Header: React.FC = () => {
         </div>
         <ul>
           <li><a href="#">Profile</a></li>
-          <li><a href="/sigin.html">Sign-In</a></li>
+          {isAuthorized ? <li><a onClick={logoutHandler}>Sign-Out</a></li> : <li><a >Sign-In</a></li>}
         </ul>
       </nav>
     </div>

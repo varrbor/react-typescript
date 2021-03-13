@@ -1,4 +1,9 @@
-import { UPDATE_INPUT_ACTION, UPDATE_LOGIN_INPUT_ACTION, UPDATE_REGISTER_INPUT_ACTION } from '../actions/auth';
+import {
+  IS_AUTHORIZED, LOGOUT_USER,
+  UPDATE_INPUT_ACTION,
+  UPDATE_LOGIN_INPUT_ACTION,
+  UPDATE_REGISTER_INPUT_ACTION,
+} from '../actions/auth';
 import { IEmailInput, IPasswordInput} from '../types'
 
 export interface ILoginForm {
@@ -9,6 +14,7 @@ export interface ILoginForm {
 interface IState {
   loginForm: ILoginForm;
   isLoading: boolean;
+  isAuthorized: boolean;
 }
 
 export const initialState: IState = {
@@ -42,6 +48,7 @@ export const initialState: IState = {
     },
   },
   isLoading: false,
+  isAuthorized: false,
 }
 
 export const getLogin = (state: {login: IState}): IState => state.login;
@@ -60,6 +67,18 @@ const login = (state = initialState, action: IAction) => {
           ...state.loginForm,
           [action.payload.identifier]: action.payload.val
         },
+      });
+
+      case IS_AUTHORIZED:
+      return ({
+        ...state,
+       isAuthorized: true,
+      });
+
+      case LOGOUT_USER:
+      return ({
+        ...state,
+       isAuthorized: false,
       });
     default:
       return state;
