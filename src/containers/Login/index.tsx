@@ -31,7 +31,6 @@ const Login: React.FC = () => {
         formData[key] = loginForm[key].value;
       }
     }
-    console.log(222, formData);
     dispatch(
       loginUser(formData)
     );

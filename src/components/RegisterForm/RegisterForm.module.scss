@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
-
-/* form */
 .registerForm{
 
 }
@@ -59,7 +56,6 @@ input:focus{
   box-shadow: 0 0 6px #719ECE;
 }
 
-/* social sign-in */
 .socialCard{
   margin-top: 5px;
 }
@@ -82,8 +78,6 @@ input:focus{
   color: var(--primary-color)
 }
 
-
-/* Utilities */
 .centerText{
   text-align: center;
 }
@@ -115,7 +109,6 @@ input:focus{
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .or p {

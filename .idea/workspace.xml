@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3256cbc1-80e7-478b-9406-91c9672a9a5c" name="Default Changelist" comment="added Header">
-      <change afterPath="$PROJECT_DIR$/src/utils/cookies.ts" afterDir="false" />
+    <list default="true" id="3256cbc1-80e7-478b-9406-91c9672a9a5c" name="Default Changelist" comment="added login logout">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Login/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Login/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Root/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Root/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/actions/auth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/auth.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducers/login.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/login.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/sagas/auth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/sagas/auth.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/sagas/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/sagas/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LoginForm/LoginForm.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LoginForm/LoginForm.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LoginForm/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LoginForm/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Newtodo/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Newtodo/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/RegisterForm/RegisterForm.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RegisterForm/RegisterForm.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/RegisterForm/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RegisterForm/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Todos/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todos/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Header/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Header/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Login/Login.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Login/Login.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Login/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Login/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Register/Register.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Register/Register.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Todo/AlarmConfirmation.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Todo/Todo.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Todo/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Todo/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +94,7 @@
       <workItem from="1615360984043" duration="9161000" />
       <workItem from="1615395268266" duration="13214000" />
       <workItem from="1615448462665" duration="17409000" />
-      <workItem from="1615571141039" duration="11906000" />
+      <workItem from="1615571141039" duration="14412000" />
     </task>
     <task id="LOCAL-00001" summary="added redux dev-tools">
       <created>1614598531582</created>
@@ -210,7 +215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615578723187</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="added login logout">
+      <created>1615671468542</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1615671468542</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,6 +254,7 @@
     <MESSAGE value="added login request" />
     <MESSAGE value="added interseptors" />
     <MESSAGE value="added Header" />
-    <option name="LAST_COMMIT_MESSAGE" value="added Header" />
+    <MESSAGE value="added login logout" />
+    <option name="LAST_COMMIT_MESSAGE" value="added login logout" />
   </component>
 </project>

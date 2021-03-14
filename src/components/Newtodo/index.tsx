@@ -1,9 +1,7 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 /* eslint-disable react/prop-types */
 import React, { useRef } from 'react';
-// import './NewTodo.module.scss';
 import styles from './NewTodo.module.scss';
-
 
 interface NewTodoProps {
   onAddTodo: (todoText: string) => void;

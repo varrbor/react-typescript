@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
-
-
 .navContainer{
   height: 60px;
   background-color: var(--primary-color);
@@ -25,26 +22,14 @@ nav ul li{
   margin: auto;
 }
 
-
 nav>*{
   margin: auto 10px;
-}
-
-
-nav .searchSection{
-  flex: 3;
-  padding-left: 6%;
 }
 
 nav .btn{
   display: inline-block;
   width: 100px;
   border-radius: 0;
-}
-
-nav .searchSection input[id='search']{
-  margin-left: 20px;
-  height: 27px;
 }
 
 nav a{
@@ -55,7 +40,7 @@ nav a{
 }
 
 nav a:hover{
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 

@@ -19,7 +19,7 @@ const Header: React.FC = () => {
     <div className={styles.navContainer}>
       <nav>
         <div >
-          <h1>MyApp.</h1>
+          <h1>ToDo</h1>
         </div>
         <ul>
           <li><a href="#">Profile</a></li>

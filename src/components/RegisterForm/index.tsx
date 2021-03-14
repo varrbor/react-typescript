@@ -1,8 +1,6 @@
 import React from 'react';
 import styles from './RegisterForm.module.scss';
 import preloader from '../../assets/icons/loading-blue.gif';
-// import  { INameInput } from '../../store/types';
-// import  { IRegisterForm } from '../../store/reducers/register';
 import cx from 'classnames';
 
 interface RegisterFormProps {

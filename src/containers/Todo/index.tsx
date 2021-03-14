@@ -3,21 +3,15 @@ import { shallowEqual, useSelector, useDispatch } from 'react-redux';
 import Todos from '../../components/Todos';
 import NewTodo from '../../components/Newtodo';
 import { getTodos } from '../../store/reducers/todos';
-
 import Preloader from '../../components/Preloader';
-
-
-import { addTodo, deleteTodo, fetchTodos, adTodoRequest, deleteTodoRequest } from '../../store/actions/todos';
+import { fetchTodos, adTodoRequest, deleteTodoRequest } from '../../store/actions/todos';
+import styles from './Todo.module.scss';
 
 const App: React.FC = () => {
-
   const  {todos} = useSelector(getTodos, shallowEqual);
-  console.log(11111, todos);
-
   const dispatch = useDispatch();
   useEffect(() => {
     let ignore = false;
-    console.log('useEffect');
     dispatch(
       fetchTodos()
     );

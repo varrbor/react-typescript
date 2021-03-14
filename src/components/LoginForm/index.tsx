@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './LoginForm.module.scss';
 import preloader from '../../assets/icons/loading-blue.gif';
-// import  { IRegisterForm } from '../../store/reducers/register';
 import cx from 'classnames';
 
 interface LoginFormProps {
@@ -15,7 +14,7 @@ const LoginForm: React.FC<LoginFormProps> = (props) => {
   return (
     <div className={styles.registerForm}>
       <div className={styles.formContainer}>
-        <div className={cx(styles.head, styles.centerText)}>Sign-In to MyApp</div>
+        <div className={cx(styles.head, styles.centerText)}>Sign-In to ToDo</div>
         <form className={styles.card} onSubmit={orderHandler}>
           {
             items.map(input=>(
@@ -37,7 +36,7 @@ const LoginForm: React.FC<LoginFormProps> = (props) => {
         </form>
         <div className={cx(styles.card, styles.signUp)}>
           <p>
-            New to MyApp?<a href="/signup.html"> Creat an account</a>
+            New to ToDo?<a href="/signup.html"> Creat an account</a>
           </p>
         </div>
         <div className={styles.or}>

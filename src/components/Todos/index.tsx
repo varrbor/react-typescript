@@ -11,7 +11,6 @@ interface TodosProps {
 }
 const Index: React.FC<TodosProps> = props => {
   const { items } = props;
-  console.log(2222,items);
   return (
     <ul className={styles.root}>
       {items.map(todo => (
