@@ -1,5 +1,5 @@
 import { put, call, takeEvery } from 'redux-saga/effects';
-import { getIncident, addTodoCall, deleteTodoCall } from '../../utils/api';
+import { getTodos, addTodoCall, deleteTodoCall } from '../../utils/api';
 import {
   FETCH_TODOS,
   setTodos,
@@ -8,11 +8,13 @@ import {
   ADD_NEW_TODO_REQUEST,
   DELETE_TODO_REQUEST,
 } from '../actions/todos';
-import { IAction } from '../reducers/todos';
+import  { IAction } from '../../utils/redux-create-reducer';
+import { setLoading } from '../actions/app';
 
 export function* fetchTodosSaga() {
     try {
-      const { data } = yield call(getIncident);
+      // yield put(setLoading(true));
+      const { data } = yield call(getTodos);
       if(data ) {
         const fetchedTodos = [];
         for (let key in data) {
@@ -23,6 +25,7 @@ export function* fetchTodosSaga() {
         }
         console.log(111,data.todos);
         yield put(setTodos(data.todos));
+        // yield put(setLoading(false));
         return;
       }
     } catch (e) {
@@ -32,8 +35,10 @@ export function* fetchTodosSaga() {
 
 export function* addNewTodoSaga({ payload }: IAction) {
   try {
+    yield put(setLoading(true));
     const { data } = yield call(addTodoCall, payload );
     yield put(addTodo({ id:data.name, text: payload.text }));
+    yield put(setLoading(false));
     return;
   } catch (e) {
     console.error(e);
@@ -42,9 +47,11 @@ export function* addNewTodoSaga({ payload }: IAction) {
 
 export function* deleteTodoSaga( payload: any) {
   try {
+    yield put(setLoading(true));
     console.log(3333,payload.payload.id);
     yield call(deleteTodoCall,  payload.payload.id );
     yield put(deleteTodo( payload.payload.text ));
+    yield put(setLoading(false));
     return;
   } catch (e) {
     console.error(e);

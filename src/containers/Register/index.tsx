@@ -9,6 +9,7 @@ import { checkValidity } from '../../utils/utility';
 
 import RegisterForm from '../../components/RegisterForm';
 import { fetchUser, updateRegisterInput } from '../../store/actions/auth';
+import { clearConfigCache } from 'prettier';
 
 const Register: React.FC = () => {
   const  { registerForm, isLoading } = useSelector(getRegister, shallowEqual);
@@ -24,6 +25,8 @@ const Register: React.FC = () => {
     });
   }
 
+  console.log(11111, registerForm);
+
   const orderHandler = ( event:any ) => {
     event.preventDefault();
     const formData:any = {};
@@ -33,6 +36,8 @@ const Register: React.FC = () => {
         formData[key] = registerForm[key].value;
       }
     }
+
+    console.log(22222,formData);
     dispatch(
       fetchUser(formData)
     );

@@ -1,4 +1,5 @@
 import { ADD_NEW_TODO, DELETE_TODO, SET_TODOS } from '../actions/todos';
+import  { IAction } from '../../utils/redux-create-reducer';
 
 export interface ITodos {
   _id: string;
@@ -16,11 +17,6 @@ export const initialState: IState = {
 };
 
 export const getTodos = (state: {todos: IState}): IState => state.todos;
-
-export interface IAction {
-  type: string;
-  payload: any;
-}
 
 const todos = (state = initialState, action: IAction) => {
   switch (action.type) {

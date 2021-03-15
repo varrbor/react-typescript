@@ -1,5 +1,6 @@
 import { UPDATE_INPUT_ACTION } from '../actions/auth';
-import { INameInput, IEmailInput, IPasswordInput} from '../types'
+import { INameInput, IEmailInput, IPasswordInput} from '../types';
+import  { IAction } from '../../utils/redux-create-reducer';
 
 export interface IRegisterForm {
   name: INameInput;
@@ -73,11 +74,6 @@ export const initialState: IState = {
 }
 
 export const getRegister = (state: {register: IState}): IState => state.register;
-
-export interface IAction {
-  type: string;
-  payload: any;
-}
 
 const register = (state = initialState, action: IAction) => {
   switch (action.type) {

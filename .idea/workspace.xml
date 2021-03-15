@@ -1,22 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3256cbc1-80e7-478b-9406-91c9672a9a5c" name="Default Changelist" comment="added login logout">
+    <list default="true" id="3256cbc1-80e7-478b-9406-91c9672a9a5c" name="Default Changelist" comment="fixed styles">
+      <change afterPath="$PROJECT_DIR$/src/store/actions/app.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/reducers/app.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/controllers/auth/auth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/controllers/auth/auth.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LoginForm/LoginForm.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LoginForm/LoginForm.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LoginForm/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LoginForm/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Newtodo/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Newtodo/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/RegisterForm/RegisterForm.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RegisterForm/RegisterForm.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/RegisterForm/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RegisterForm/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Todos/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todos/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Header/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Header/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Login/Login.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Login/Login.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Login/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Login/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Register/Register.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Register/Register.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Todo/AlarmConfirmation.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Todo/Todo.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Register/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Register/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/Todo/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Todo/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Login/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Login/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Root/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Root/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/actions/auth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/auth.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers/login.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/login.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers/register.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/register.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers/todos.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/todos.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/sagas/auth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/sagas/auth.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/sagas/todo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/sagas/todo.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/api.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +49,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/containers/Header" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/store/reducers" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
     <property name="ts.external.directory.path" value="C:\Users\varrb\react-typescript\node_modules\typescript\lib" />
@@ -55,11 +57,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\varrb\react-typescript\src\store\reducers" />
       <recent name="C:\Users\varrb\react-typescript\src\containers\Header" />
       <recent name="C:\Users\varrb\react-typescript\src\components\Header" />
       <recent name="C:\Users\varrb\react-typescript\server\src\types" />
       <recent name="C:\Users\varrb\react-typescript\server\src" />
-      <recent name="C:\Users\varrb\react-typescript\src\components\LoginForm" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\varrb\react-typescript\src\containers" />
@@ -94,7 +96,7 @@
       <workItem from="1615360984043" duration="9161000" />
       <workItem from="1615395268266" duration="13214000" />
       <workItem from="1615448462665" duration="17409000" />
-      <workItem from="1615571141039" duration="14412000" />
+      <workItem from="1615571141039" duration="23641000" />
     </task>
     <task id="LOCAL-00001" summary="added redux dev-tools">
       <created>1614598531582</created>
@@ -222,7 +224,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615671468542</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="fixed styles">
+      <created>1615734678366</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1615734678366</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -255,6 +264,7 @@
     <MESSAGE value="added interseptors" />
     <MESSAGE value="added Header" />
     <MESSAGE value="added login logout" />
-    <option name="LAST_COMMIT_MESSAGE" value="added login logout" />
+    <MESSAGE value="fixed styles" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed styles" />
   </component>
 </project>

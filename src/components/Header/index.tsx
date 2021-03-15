@@ -5,11 +5,11 @@ import preloader from '../../assets/icons/loading-blue.gif';
 import cx from 'classnames';
 import { logOutUser } from '../../store/actions/auth';
 import { shallowEqual, useSelector, useDispatch } from 'react-redux';
-import { getLogin } from '../../store/reducers/login';
+import { getApp } from '../../store/reducers/app';
 
 
 const Header: React.FC = () => {
-  const  {isAuthorized} = useSelector(getLogin, shallowEqual);
+  const  { authorized } = useSelector(getApp, shallowEqual);
   const dispatch = useDispatch();
 
   const logoutHandler = () => {
@@ -23,7 +23,7 @@ const Header: React.FC = () => {
         </div>
         <ul>
           <li><a href="#">Profile</a></li>
-          {isAuthorized ? <li><a onClick={logoutHandler}>Sign-Out</a></li> : <li><a >Sign-In</a></li>}
+          {authorized ? <li><a onClick={logoutHandler}>Sign-Out</a></li> : <li><a >Sign-In</a></li>}
         </ul>
       </nav>
     </div>

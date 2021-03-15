@@ -23,12 +23,11 @@ export const api = axios.create({
 console.log(444,document.cookie);
 api.interceptors.request.use(config => {
   const token = getAuthData().token;
-  console.log(5555,getAuthData().token);
   config.headers['Authorization'] = `Bearer ${token}`;
   return config;
 });
 
-export const getIncident = () => api.get<ITodo>(urls.todos);
+export const getTodos = () => api.get<ITodo>(urls.todos);
 export const addTodoCall = (data:ITodo ) => api.post(urls.addTodo, data);
 // export const deleteTodoCall = (id:any ) => api.delete(urls.deleteTodo,  id );
 export const deleteTodoCall = (id:string ) => {
@@ -40,7 +39,7 @@ export const loginUser = (data:IRegisterForm ) => api.post(urls.loginUser, data)
 export default {
   urls,
   postMessage,
-  getIncident,
+  getTodos,
   registerUser,
   loginUser,
 };

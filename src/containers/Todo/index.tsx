@@ -6,10 +6,13 @@ import { getTodos } from '../../store/reducers/todos';
 import Preloader from '../../components/Preloader';
 import { fetchTodos, adTodoRequest, deleteTodoRequest } from '../../store/actions/todos';
 import styles from './Todo.module.scss';
+import { getApp } from '../../store/reducers/app';
 
 const App: React.FC = () => {
   const  {todos} = useSelector(getTodos, shallowEqual);
   const dispatch = useDispatch();
+  const  { authorized, isLoading } = useSelector(getApp, shallowEqual);
+
   useEffect(() => {
     let ignore = false;
     dispatch(

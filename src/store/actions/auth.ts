@@ -11,7 +11,6 @@ export const UPDATE_LOGIN_INPUT = 'REGISTER/UPDATE_LOGIN_INPUT';
 export const UPDATE_INPUT_ACTION = 'REGISTER/UPDATE_INPUT_ACTION';
 export const LOGIN_USER = 'LOGIN/LOGIN_USER';
 export const LOGOUT_USER = 'LOGIN/LOGOUT_USER';
-export const IS_AUTHORIZED = 'LOGIN/IS_AUTHORIZED';
 
 export const types = {
   FETCH_USER_START,
@@ -23,7 +22,6 @@ export const types = {
   UPDATE_REGISTER_INPUT_ACTION,
   UPDATE_LOGIN_INPUT_ACTION,
   LOGIN_USER,
-  IS_AUTHORIZED,
   LOGOUT_USER
 };
 
@@ -37,5 +35,4 @@ export const updateRegisterInputAction = createAction(UPDATE_REGISTER_INPUT_ACTI
 export const updateLoginInputAction = createAction(UPDATE_LOGIN_INPUT_ACTION);
 export const loginUser = createAction(LOGIN_USER);
 export const logOutUser = createEmptyAction(LOGOUT_USER);
-export const isAuthorized = createEmptyAction(IS_AUTHORIZED);
 
