@@ -10,7 +10,10 @@ export const convertName = (name: string) =>
     .map(s => s[0].toUpperCase())
     .join('');
 
-export const isScrolledIntoView = (el: Element, parentEl?: HTMLElement | null) => {
+export const isScrolledIntoView = (
+  el: Element,
+  parentEl?: HTMLElement | null
+) => {
   if (!el) {
     return false;
   }
@@ -18,9 +21,13 @@ export const isScrolledIntoView = (el: Element, parentEl?: HTMLElement | null) =
   const elemBottom = rect.bottom;
 
   // Only completely visible elements return true:
-  const isVisible = elemBottom <= (parentEl ? parentEl.getBoundingClientRect().bottom + 5 : window.innerHeight);
+  const isVisible =
+    elemBottom <=
+    (parentEl
+      ? parentEl.getBoundingClientRect().bottom + 5
+      : window.innerHeight);
   // Partially visible elements return true:
-  //isVisible = elemTop < window.innerHeight && elemBottom >= 0;
+  // isVisible = elemTop < window.innerHeight && elemBottom >= 0;
   return isVisible;
 };
 
@@ -28,7 +35,7 @@ export const convertSecondsToTime = (sec: number): string => {
   const minutes = parseInt(String(sec / 60));
   const seconds = sec % 60;
 
-  return `${minutes}:${seconds > 9 ? seconds : '0' + seconds}`;
+  return `${minutes}:${seconds > 9 ? seconds : `0${seconds}`}`;
 };
 
 export const scrollToBottom = (elId: string) => {
@@ -46,9 +53,11 @@ export const scrollToNewMessages = () => {
   }
 };
 
-export const strCode = (a: number[]) => a.map(t => String.fromCharCode(t)).join('');
+export const strCode = (a: number[]) =>
+  a.map(t => String.fromCharCode(t)).join('');
 
-export const cutHtml = (text?: string): string => (text || '').replace(/\<(.*?)>/g, '');
+export const cutHtml = (text?: string): string =>
+  (text || '').replace(/\<(.*?)>/g, '');
 
 export const vh100 = () => {
   // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
@@ -59,7 +68,9 @@ export const vh100 = () => {
 
 export const isFeedBottom = () => {
   const feed = document.getElementById('feed');
-  const val = feed && feed.scrollHeight - (feed.getBoundingClientRect().height + feed.scrollTop);
+  const val =
+    feed &&
+    feed.scrollHeight - (feed.getBoundingClientRect().height + feed.scrollTop);
   return Number(val) < 200;
 };
 

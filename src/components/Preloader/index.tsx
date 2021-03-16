@@ -8,7 +8,7 @@ const Preloader = () => {
       <div className={styles.root}>
         <img className={styles.image} src={preloader} alt="icon" />
       </div>
-      <div className={styles.background}></div>
+      <div className={styles.background} />
     </>
   );
 };

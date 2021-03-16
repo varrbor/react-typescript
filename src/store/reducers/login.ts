@@ -4,9 +4,8 @@ import {
   UPDATE_LOGIN_INPUT_ACTION,
   UPDATE_REGISTER_INPUT_ACTION,
 } from '../actions/auth';
-import { IEmailInput, IPasswordInput} from '../types';
-import  { IAction } from '../../utils/redux-create-reducer';
-
+import { IEmailInput, IPasswordInput } from '../types';
+import { IAction } from '../../utils/redux-create-reducer';
 
 export interface ILoginForm {
   email: IEmailInput;
@@ -24,15 +23,15 @@ export const initialState: IState = {
       elementType: 'input',
       elementConfig: {
         type: 'email',
-        placeholder: 'Email address'
+        placeholder: 'Email address',
       },
       value: 'test@test.com',
       validation: {
         required: true,
-        isEmail: true
+        isEmail: true,
       },
       valid: false,
-      touched: false
+      touched: false,
     },
     password: {
       elementType: 'password',
@@ -42,35 +41,34 @@ export const initialState: IState = {
       },
       value: '',
       validation: {
-        required: true
+        required: true,
       },
       valid: false,
-      touched: false
+      touched: false,
     },
   },
   isLoading: false,
-}
+};
 
-export const getLogin = (state: {login: IState}): IState => state.login;
+export const getLogin = (state: { login: IState }): IState => state.login;
 
 const login = (state = initialState, action: IAction) => {
   switch (action.type) {
     case UPDATE_LOGIN_INPUT_ACTION:
-      return ({
+      return {
         ...state,
         loginForm: {
           ...state.loginForm,
-          [action.payload.identifier]: action.payload.val
+          [action.payload.identifier]: action.payload.val,
         },
-      });
-      case LOGOUT_USER:
-      return ({
+      };
+    case LOGOUT_USER:
+      return {
         ...state,
-       isAuthorized: false,
-      });
+        isAuthorized: false,
+      };
     default:
       return state;
   }
 };
 export default login;
-

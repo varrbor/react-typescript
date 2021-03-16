@@ -5,7 +5,8 @@ export const FETCH_USER_SUCCESS = 'REGISTER/FETCH_USER_SUCCESS';
 export const FETCH_USER_FAIL = 'REGISTER/FETCH_USER_FAIL';
 export const FETCH_USER = 'REGISTER/FETCH_USER';
 export const UPDATE_REGISTER_INPUT = 'REGISTER/UPDATE_REGISTER_INPUT';
-export const UPDATE_REGISTER_INPUT_ACTION = 'REGISTER/UPDATE_REGISTER_INPUT_ACTION';
+export const UPDATE_REGISTER_INPUT_ACTION =
+  'REGISTER/UPDATE_REGISTER_INPUT_ACTION';
 export const UPDATE_LOGIN_INPUT_ACTION = 'REGISTER/UPDATE_LOGIN_INPUT_ACTION';
 export const UPDATE_LOGIN_INPUT = 'REGISTER/UPDATE_LOGIN_INPUT';
 export const UPDATE_INPUT_ACTION = 'REGISTER/UPDATE_INPUT_ACTION';
@@ -22,7 +23,7 @@ export const types = {
   UPDATE_REGISTER_INPUT_ACTION,
   UPDATE_LOGIN_INPUT_ACTION,
   LOGIN_USER,
-  LOGOUT_USER
+  LOGOUT_USER,
 };
 
 export const fetchUserStart = createAction(FETCH_USER_START);
@@ -31,8 +32,9 @@ export const fetchUserFail = createEmptyAction(FETCH_USER_FAIL);
 export const fetchUser = createAction(FETCH_USER);
 export const updateRegisterInput = createAction(UPDATE_REGISTER_INPUT);
 export const updateLoginInput = createAction(UPDATE_LOGIN_INPUT);
-export const updateRegisterInputAction = createAction(UPDATE_REGISTER_INPUT_ACTION);
+export const updateRegisterInputAction = createAction(
+  UPDATE_REGISTER_INPUT_ACTION
+);
 export const updateLoginInputAction = createAction(UPDATE_LOGIN_INPUT_ACTION);
 export const loginUser = createAction(LOGIN_USER);
 export const logOutUser = createEmptyAction(LOGOUT_USER);
-

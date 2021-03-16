@@ -4,7 +4,6 @@
 import React from 'react';
 import styles from './Todos.module.scss';
 
-
 interface TodosProps {
   items: { _id: string; text: string }[];
   onDeleteTodo: (id: string) => void;

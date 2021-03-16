@@ -1,5 +1,5 @@
 import { ADD_NEW_TODO, DELETE_TODO, SET_TODOS } from '../actions/todos';
-import  { IAction } from '../../utils/redux-create-reducer';
+import { IAction } from '../../utils/redux-create-reducer';
 
 export interface ITodos {
   _id: string;
@@ -16,29 +16,28 @@ export const initialState: IState = {
   isLoading: false,
 };
 
-export const getTodos = (state: {todos: IState}): IState => state.todos;
+export const getTodos = (state: { todos: IState }): IState => state.todos;
 
 const todos = (state = initialState, action: IAction) => {
   switch (action.type) {
     case ADD_NEW_TODO:
-      return ({
+      return {
         ...state,
         todos: [...state.todos, action.payload],
-      });
+      };
     case DELETE_TODO:
-      return ({
+      return {
         ...state,
         todos: [...action.payload],
-      });
+      };
 
     case SET_TODOS:
-      return ({
+      return {
         ...state,
         todos: [...action.payload],
-      });
+      };
     default:
       return state;
   }
 };
 export default todos;
-

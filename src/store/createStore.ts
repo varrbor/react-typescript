@@ -5,7 +5,6 @@ import reducer from './reducers/index';
 // import createSagaMonitor from '@clarketm/saga-monitor';
 import appSagas from './sagas';
 
-
 declare global {
   interface Window {
     __REDUX_DEVTOOLS_EXTENSION_COMPOSE__?: typeof compose;
@@ -18,7 +17,11 @@ const middlewares = [sagaMiddleware];
 
 const composer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
-const store = createStore(reducer, undefined, composer(applyMiddleware(...middlewares)));
+const store = createStore(
+  reducer,
+  undefined,
+  composer(applyMiddleware(...middlewares))
+);
 
 sagaMiddleware.run(appSagas);
 

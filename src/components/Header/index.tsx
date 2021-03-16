@@ -1,15 +1,14 @@
 import React from 'react';
+import cx from 'classnames';
+import { shallowEqual, useSelector, useDispatch } from 'react-redux';
 import styles from './Header.module.scss';
 import preloader from '../../assets/icons/loading-blue.gif';
 // import  { IRegisterForm } from '../../store/reducers/register';
-import cx from 'classnames';
 import { logOutUser } from '../../store/actions/auth';
-import { shallowEqual, useSelector, useDispatch } from 'react-redux';
 import { getApp } from '../../store/reducers/app';
 
-
 const Header: React.FC = () => {
-  const  { authorized } = useSelector(getApp, shallowEqual);
+  const { authorized } = useSelector(getApp, shallowEqual);
   const dispatch = useDispatch();
 
   const logoutHandler = () => {
@@ -18,12 +17,22 @@ const Header: React.FC = () => {
   return (
     <div className={styles.navContainer}>
       <nav>
-        <div >
+        <div>
           <h1>ToDo</h1>
         </div>
         <ul>
-          <li><a href="#">Profile</a></li>
-          {authorized ? <li><a onClick={logoutHandler}>Sign-Out</a></li> : <li><a >Sign-In</a></li>}
+          <li>
+            <a href="#">Profile</a>
+          </li>
+          {authorized ? (
+            <li>
+              <a onClick={logoutHandler}>Sign-Out</a>
+            </li>
+          ) : (
+            <li>
+              <a>Sign-In</a>
+            </li>
+          )}
         </ul>
       </nav>
     </div>

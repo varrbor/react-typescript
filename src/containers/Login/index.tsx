@@ -2,19 +2,19 @@
 /* eslint-disable react/button-has-type */
 /* eslint-disable jsx-a11y/control-has-associated-label */
 import React from 'react';
-import LoginForm from '../../components/LoginForm/index'
 import { shallowEqual, useDispatch, useSelector } from 'react-redux';
+import LoginForm from '../../components/LoginForm/index';
 import { getLogin } from '../../store/reducers/login';
 import { loginUser, updateLoginInput } from '../../store/actions/auth';
 import { INameInput } from '../../store/types';
 import { checkValidity } from '../../utils/utility';
 
 const Login: React.FC = () => {
-  const  { loginForm } = useSelector(getLogin, shallowEqual);
+  const { loginForm } = useSelector(getLogin, shallowEqual);
   const dispatch = useDispatch();
   const formElementsArray = [];
   // @ts-ignore
-  for (let key: any in loginForm) {
+  for (const key: any in loginForm) {
     formElementsArray.push({
       id: key,
       // @ts-ignore
@@ -22,45 +22,54 @@ const Login: React.FC = () => {
     });
   }
 
-  const orderHandler = ( event:any ) => {
+  const orderHandler = (event: any) => {
     event.preventDefault();
-    const formData:any = {};
-    for (let key in loginForm) {
-      if(key!=='repeatPassword'){
+    const formData: any = {};
+    for (const key in loginForm) {
+      if (key !== 'repeatPassword') {
         // @ts-ignore
         formData[key] = loginForm[key].value;
       }
     }
-    dispatch(
-      loginUser(formData)
-    );
-  }
+    dispatch(loginUser(formData));
+  };
 
-  const inputChangedHandler = (event:any, inputIdentifier: INameInput) => {
+  const inputChangedHandler = (event: any, inputIdentifier: INameInput) => {
     const updatedOrderForm = {
-      ...loginForm
+      ...loginForm,
     };
 
     const updatedFormElement = {
       // @ts-ignore
-      ...updatedOrderForm[inputIdentifier]
+      ...updatedOrderForm[inputIdentifier],
     };
     updatedFormElement.value = event.target.value;
-    updatedFormElement.valid = checkValidity(updatedFormElement.value, updatedFormElement.validation);
+    updatedFormElement.valid = checkValidity(
+      updatedFormElement.value,
+      updatedFormElement.validation
+    );
     updatedFormElement.touched = true;
     // @ts-ignore
     updatedOrderForm[inputIdentifier] = updatedFormElement;
     let formIsValid = true;
-    for (let inputIdentifier in updatedOrderForm) {
+    for (const inputIdentifier in updatedOrderForm) {
       // @ts-ignore
       formIsValid = updatedOrderForm[inputIdentifier].valid && formIsValid;
     }
     dispatch(
-      updateLoginInput({identifier: inputIdentifier, val: updatedFormElement, formIsValid: formIsValid})
+      updateLoginInput({
+        identifier: inputIdentifier,
+        val: updatedFormElement,
+        formIsValid,
+      })
     );
-  }
+  };
   return (
-    <LoginForm items={formElementsArray} onChange={inputChangedHandler} orderHandler={orderHandler} />
+    <LoginForm
+      items={formElementsArray}
+      onChange={inputChangedHandler}
+      orderHandler={orderHandler}
+    />
   );
 };
 

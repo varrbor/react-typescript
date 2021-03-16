@@ -10,19 +10,15 @@ import {
   LOGOUT_USER,
 } from '../actions/auth';
 
-import {
-  authorize,
-  setLoading
-} from '../actions/app';
+import { authorize, setLoading } from '../actions/app';
 
-import  { IAction } from '../../utils/redux-create-reducer';
+import { IAction } from '../../utils/redux-create-reducer';
 import { getAuthData } from '../../utils/cookies';
-
 
 export function* updateRegisterInputSaga({ payload }: IAction) {
   try {
-    yield put(updateRegisterInputAction( payload ));
-      return;
+    yield put(updateRegisterInputAction(payload));
+    return;
   } catch (e) {
     console.error(e);
   }
@@ -30,8 +26,8 @@ export function* updateRegisterInputSaga({ payload }: IAction) {
 
 export function* updateLoginInputSaga({ payload }: IAction) {
   try {
-    yield put(updateLoginInputAction( payload ));
-      return;
+    yield put(updateLoginInputAction(payload));
+    return;
   } catch (e) {
     console.error(e);
   }
@@ -39,9 +35,9 @@ export function* updateLoginInputSaga({ payload }: IAction) {
 
 export function* createUserSaga({ payload }: IAction) {
   try {
-    console.log(777777,payload);
+    console.log(777777, payload);
     yield put(setLoading(true));
-    yield call(registerUser,  payload );
+    yield call(registerUser, payload);
     yield put(setLoading(false));
 
     return;
@@ -53,10 +49,10 @@ export function* createUserSaga({ payload }: IAction) {
 export function* loginUserSaga({ payload }: IAction) {
   try {
     yield put(setLoading(true));
-    const {data} = yield call(loginUser, payload);
+    const { data } = yield call(loginUser, payload);
     console.log(123456, data.data.token);
     const maxAge = 3600 * 24 * 30;
-    if(data.data.token) {
+    if (data.data.token) {
       yield put(authorize(true));
       document.cookie = `jwtToken=${data.data.token}; max-age=${maxAge}`;
       document.cookie = `userId=${data.data.userId}; max-age=${maxAge}`;
@@ -85,7 +81,7 @@ export function* authT() {
   try {
     // yield put(setLoading(true));
     if (getAuthData().token) {
-      yield put(authorize(true))
+      yield put(authorize(true));
     }
     // yield put(setLoading(false));
     return;

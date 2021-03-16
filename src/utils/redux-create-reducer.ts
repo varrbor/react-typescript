@@ -21,8 +21,10 @@ try {
 } catch (e) {}
 
 const createReducer = (initialState: IState = {}, handlers: IHandlers) => {
-  if (__DEV__ && handlers['undefined']) {
-    console.warn('Reducer contains an "undefined" action type. Have you misspelled a constant?');
+  if (__DEV__ && handlers.undefined) {
+    console.warn(
+      'Reducer contains an "undefined" action type. Have you misspelled a constant?'
+    );
   }
 
   return function reducer(state = initialState, action: IAction) {
@@ -32,9 +34,12 @@ const createReducer = (initialState: IState = {}, handlers: IHandlers) => {
       newState = { ...state, ...result };
     }
     if (handlers['*']) {
-      return { ...newState, ...handlers['*'](action.payload, newState, action.type) };
+      return {
+        ...newState,
+        ...handlers['*'](action.payload, newState, action.type),
+      };
     }
-    console.log('newState', newState)
+    console.log('newState', newState);
     return newState;
   };
 };

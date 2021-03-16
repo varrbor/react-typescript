@@ -18,7 +18,7 @@ const Index: React.FC<NewTodoProps> = props => {
 
   return (
     <div className={styles.root}>
-      <form  onSubmit={todoSubmitHandler}>
+      <form onSubmit={todoSubmitHandler}>
         <div className={styles.formControl}>
           <label>Todo Text</label>
           <input type="text" id="todo-text" ref={textInputRef} />

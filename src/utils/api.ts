@@ -1,8 +1,9 @@
+import axios from 'axios';
 import { API_BASE_URL } from '../env';
 import pack from '../../package.json';
-import axios from 'axios';
 import { IRegisterForm } from '../store/reducers/register';
-import { getAuthData } from '../utils/cookies';
+import { getAuthData } from './cookies';
+
 const p = pack as any;
 
 export enum urls {
@@ -16,25 +17,27 @@ export enum urls {
 export const api = axios.create({
   baseURL: 'http://localhost:4000',
   headers: {
-    "Content-Type": "application/json"
-  }
+    'Content-Type': 'application/json',
+  },
 });
 
-console.log(444,document.cookie);
+console.log(444, document.cookie);
 api.interceptors.request.use(config => {
-  const token = getAuthData().token;
-  config.headers['Authorization'] = `Bearer ${token}`;
+  const { token } = getAuthData();
+  config.headers.Authorization = `Bearer ${token}`;
   return config;
 });
 
 export const getTodos = () => api.get<ITodo>(urls.todos);
-export const addTodoCall = (data:ITodo ) => api.post(urls.addTodo, data);
+export const addTodoCall = (data: ITodo) => api.post(urls.addTodo, data);
 // export const deleteTodoCall = (id:any ) => api.delete(urls.deleteTodo,  id );
-export const deleteTodoCall = (id:string ) => {
-  return axios.delete(
-  `http://localhost:4000/delete-todo/${id}`)};
-export const registerUser = (data:IRegisterForm ) => api.post(urls.fetchUser, data);
-export const loginUser = (data:IRegisterForm ) => api.post(urls.loginUser, data);
+export const deleteTodoCall = (id: string) => {
+  return axios.delete(`http://localhost:4000/delete-todo/${id}`);
+};
+export const registerUser = (data: IRegisterForm) =>
+  api.post(urls.fetchUser, data);
+export const loginUser = (data: IRegisterForm) =>
+  api.post(urls.loginUser, data);
 
 export default {
   urls,

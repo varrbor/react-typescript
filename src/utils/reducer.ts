@@ -9,7 +9,7 @@ export const cs = (
   testName: string,
   action: IAction,
   expected: IState,
-  preparedState: IState = {},
+  preparedState: IState = {}
 ): ReduxTestSeqStep => (reducer, initialState) => {
   test(testName, () => {
     const state = reducer(preparedState, action);
@@ -17,7 +17,11 @@ export const cs = (
   });
 };
 
-export const testReducer = (reducer: Reducer, initialState: IState, testSeq: ReduxTestSeqStep[]) => () => {
+export const testReducer = (
+  reducer: Reducer,
+  initialState: IState,
+  testSeq: ReduxTestSeqStep[]
+) => () => {
   test('should set initial state', () => {
     const state = reducer(undefined, fakeAction());
     expect(state).toBe(initialState);

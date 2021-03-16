@@ -8,7 +8,7 @@ const rootReducer = combineReducers({
   app,
   todos,
   register,
-  login
+  login,
 });
 
 export default rootReducer;
