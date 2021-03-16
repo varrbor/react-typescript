@@ -1,4 +1,4 @@
-export const getAuthData = () => {
+const getAuthData = () => {
   const jwtTokenCookie: RegExpMatchArray | null = document.cookie.match(
     `(^|; )jwtToken=([^;]*)`
   );
@@ -20,3 +20,5 @@ export const getAuthData = () => {
     userId: null,
   };
 };
+
+export default getAuthData;

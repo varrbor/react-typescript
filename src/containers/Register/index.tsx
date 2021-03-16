@@ -6,7 +6,7 @@ import { shallowEqual, useSelector, useDispatch } from 'react-redux';
 import { clearConfigCache } from 'prettier';
 import { getRegister } from '../../store/reducers/register';
 import { INameInput } from '../../store/types';
-import { checkValidity } from '../../utils/utility';
+import checkValidity from '../../utils/utility';
 
 import RegisterForm from '../../components/RegisterForm';
 import { fetchUser, updateRegisterInput } from '../../store/actions/auth';

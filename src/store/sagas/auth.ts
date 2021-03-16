@@ -13,7 +13,7 @@ import {
 import { authorize, setLoading } from '../actions/app';
 
 import { IAction } from '../../utils/redux-create-reducer';
-import { getAuthData } from '../../utils/cookies';
+import getAuthData from '../../utils/cookies';
 
 export function* updateRegisterInputSaga({ payload }: IAction) {
   try {

@@ -1,4 +1,4 @@
-export const checkValidity = (value, rules) => {
+const checkValidity = (value, rules) => {
   let isValid = true;
   if (!rules) {
     return true;
@@ -28,3 +28,5 @@ export const checkValidity = (value, rules) => {
   console.log('111utility', isValid);
   return isValid;
 };
+
+export default checkValidity;

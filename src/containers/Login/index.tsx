@@ -7,7 +7,7 @@ import LoginForm from '../../components/LoginForm/index';
 import { getLogin } from '../../store/reducers/login';
 import { loginUser, updateLoginInput } from '../../store/actions/auth';
 import { INameInput } from '../../store/types';
-import { checkValidity } from '../../utils/utility';
+import checkValidity from '../../utils/utility';
 
 const Login: React.FC = () => {
   const { loginForm } = useSelector(getLogin, shallowEqual);

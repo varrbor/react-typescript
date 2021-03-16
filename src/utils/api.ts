@@ -2,7 +2,7 @@ import axios from 'axios';
 import { API_BASE_URL } from '../env';
 import pack from '../../package.json';
 import { IRegisterForm } from '../store/reducers/register';
-import { getAuthData } from './cookies';
+import getAuthData from './cookies';
 
 const p = pack as any;
 
